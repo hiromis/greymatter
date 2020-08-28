@@ -1,0 +1,25 @@
+{
+  "checksum": "97a22bb7bd1a39086c68592346c7c72bd0ba45c948c641a33aa7f51252306898",
+  "cohort_seed": null,
+  "default": {
+    "dark": null,
+    "light": [
+      {
+        "cluster_key": "edge-to-slo-cluster",
+        "constraint_key": "",
+        "metadata": null,
+        "properties": null,
+        "response_data": {},
+        "weight": 1
+      }
+    ],
+    "tap": null
+  },
+  "name": "slo",
+  "properties": null,
+  "response_data": {},
+  "retry_policy": null,
+  "rules": null,
+  "shared_rules_key": "edge-slo-shared-rules",
+  "zone_key": "zone-default-zone"
+}

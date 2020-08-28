@@ -1,0 +1,25 @@
+{
+  "checksum": "55c889feabb27f163b3ee431997a49e37042611b9cee7ec201c114025da47726",
+  "cohort_seed": null,
+  "default": {
+    "dark": null,
+    "light": [
+      {
+        "cluster_key": "edge-to-data-internal-cluster",
+        "constraint_key": "",
+        "metadata": null,
+        "properties": null,
+        "response_data": {},
+        "weight": 1
+      }
+    ],
+    "tap": null
+  },
+  "name": "data-internal",
+  "properties": null,
+  "response_data": {},
+  "retry_policy": null,
+  "rules": null,
+  "shared_rules_key": "edge-data-internal-shared-rules",
+  "zone_key": "zone-default-zone"
+}

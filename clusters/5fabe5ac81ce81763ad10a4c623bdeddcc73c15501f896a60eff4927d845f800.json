@@ -1,0 +1,28 @@
+{
+  "checksum": "5fabe5ac81ce81763ad10a4c623bdeddcc73c15501f896a60eff4927d845f800",
+  "circuit_breakers": null,
+  "cluster_key": "cluster-slo",
+  "health_checks": [],
+  "instances": [
+    {
+      "host": "0.0.0.0",
+      "metadata": null,
+      "port": 1337
+    }
+  ],
+  "lb_policy": "",
+  "name": "slo-service",
+  "outlier_detection": null,
+  "secret": {
+    "checksum": "",
+    "ecdh_curves": null,
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "subject_names": null
+  },
+  "zone_key": "zone-default-zone"
+}

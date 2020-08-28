@@ -1,0 +1,31 @@
+{
+  "active_http_filters": [],
+  "active_network_filters": null,
+  "checksum": "a3fbb75b5a4e6366150c82d842fbea1081298f3e6fb54b56cae968f9aaf52fad",
+  "domain_keys": [
+    "domain-jwt-security",
+    "domain-jwt-security-egress"
+  ],
+  "http_filters": {
+    "gm_inheaders": {}
+  },
+  "ip": "127.0.0.1",
+  "listener_key": "listener-jwt-security-egress",
+  "name": "jwt-security",
+  "network_filters": null,
+  "port": 10909,
+  "protocol": "http_auto",
+  "secret": {
+    "checksum": "",
+    "ecdh_curves": null,
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "subject_names": null
+  },
+  "tracing_config": null,
+  "zone_key": "zone-default-zone"
+}

@@ -1,0 +1,149 @@
+{
+  "active_http_filters": [
+    "gm.metrics",
+    "gm.inheaders",
+    "gm.jwtsecurity",
+    "envoy.jwt_authn",
+    "envoy.rbac"
+  ],
+  "active_network_filters": null,
+  "checksum": "0bf9c2806b8824ac8320d44752d1c0838c73284f0688eeff2106e3912276876a",
+  "domain_keys": [
+    "edge",
+    "edge-egress"
+  ],
+  "http_filters": {
+    "envoy_jwt_authn": {
+      "providers": {
+        "greymatter": {
+          "from_headers": [
+            {
+              "name": "userpolicy"
+            }
+          ],
+          "issuer": "greymatter.io",
+          "local_jwks": {
+            "inline_string": "{'keys':[{'crv': 'P-521','kid': '1','kty': 'EC','x': 'DxZd8I_IS4Am6jfjKNaqsAxWfxhweN6I081jLgq6hTL-qlReYXd62kH3v-chAWtqWKILz1CM-reeh5hlZ3qsDf4','y': 'AWs6sDyue4kBEM90K7IVweZ674QIyn4hEqPvsxZpGVAKoE466MdhCVI7RxceNGGxXtVa3zevbnP1Grju-DymFkVl'}]}"
+          },
+          "payload_in_metadata": "claims"
+        }
+      },
+      "rules": [
+        {
+          "match": {
+            "prefix": "/"
+          },
+          "requires": {
+            "provider_name": "greymatter"
+          }
+        }
+      ]
+    },
+    "envoy_rbac": {
+      "rules": {
+        "action": 0,
+        "policies": {
+          "admin_dn": {
+            "permissions": [
+              {
+                "any": true
+              }
+            ],
+            "principals": [
+              {
+                "header": {
+                  "exact_match": "CN=quickstart,OU=Engineering,O=Decipher Technology Studios,L=Alexandria,ST=Virginia,C=US",
+                  "name": "user_dn"
+                }
+              }
+            ]
+          },
+          "anonymous": {
+            "permissions": [
+              {
+                "header": {
+                  "exact_match": "GET",
+                  "name": ":method"
+                }
+              }
+            ],
+            "principals": [
+              {
+                "any": true
+              }
+            ]
+          },
+          "greymatter-developer": {
+            "permissions": [
+              {
+                "any": true
+              }
+            ],
+            "principals": [
+              {
+                "metadata": {
+                  "filter": "envoy.filters.http.jwt_authn",
+                  "path": [
+                    {
+                      "key": "claims"
+                    },
+                    {
+                      "key": "values"
+                    },
+                    {
+                      "key": "email"
+                    }
+                  ],
+                  "value": {
+                    "list_match": {
+                      "one_of": {
+                        "string_match": {
+                          "suffix": "greymatter.io"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "gm_inheaders": {},
+    "gm_jwtsecurity": {
+      "apiKey": "dm9sY2Fuby1lcGlkZW1pYy10d2VsZnRoLXRhbWFsZQ==",
+      "endpoint": "http://localhost:10909/jwt",
+      "jwtHeaderName": "userpolicy"
+    },
+    "gm_metrics": {
+      "metrics_dashboard_uri_path": "/metrics",
+      "metrics_host": "0.0.0.0",
+      "metrics_key_depth": "3",
+      "metrics_key_function": "depth",
+      "metrics_port": 8081,
+      "metrics_prometheus_uri_path": "/prometheus",
+      "metrics_ring_buffer_size": 4096,
+      "prometheus_system_metrics_interval_seconds": 15
+    }
+  },
+  "ip": "0.0.0.0",
+  "listener_key": "edge-listener",
+  "name": "edge",
+  "network_filters": null,
+  "port": 10808,
+  "protocol": "http_auto",
+  "secret": {
+    "checksum": "",
+    "ecdh_curves": null,
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "subject_names": null
+  },
+  "tracing_config": null,
+  "zone_key": "zone-default-zone"
+}

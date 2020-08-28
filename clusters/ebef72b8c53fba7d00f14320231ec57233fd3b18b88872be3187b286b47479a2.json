@@ -1,0 +1,54 @@
+{
+  "checksum": "ebef72b8c53fba7d00f14320231ec57233fd3b18b88872be3187b286b47479a2",
+  "circuit_breakers": null,
+  "cluster_key": "edge-to-catalog-cluster",
+  "health_checks": [],
+  "instances": [
+    {
+      "host": "10.42.2.6",
+      "metadata": [
+        {
+          "key": "deployment",
+          "value": "catalog"
+        },
+        {
+          "key": "pod-template-hash",
+          "value": "6b88965bfb"
+        },
+        {
+          "key": "gm_control_discovery",
+          "value": "true"
+        },
+        {
+          "key": "gm_k8s_host_ip",
+          "value": "172.24.0.3"
+        },
+        {
+          "key": "gm_k8s_node_name",
+          "value": "k3d-greymatter-agent-0"
+        }
+      ],
+      "port": 10808
+    }
+  ],
+  "lb_policy": "",
+  "name": "catalog",
+  "outlier_detection": null,
+  "require_tls": true,
+  "secret": {
+    "checksum": "157df0d73942b091b0052b1897a6f556813e9b0523709b6dfd2ec0b6b67cfd54",
+    "ecdh_curves": [
+      "X25519:P-256:P-521:P-384"
+    ],
+    "secret_key": "secret-catalog-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/edge",
+    "secret_validation_name": "spiffe://quickstart.greymatter.io",
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "subject_names": [
+      "spiffe://quickstart.greymatter.io/catalog"
+    ]
+  },
+  "zone_key": "zone-default-zone"
+}

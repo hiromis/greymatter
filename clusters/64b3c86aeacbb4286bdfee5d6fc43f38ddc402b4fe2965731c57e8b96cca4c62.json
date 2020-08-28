@@ -1,0 +1,54 @@
+{
+  "checksum": "64b3c86aeacbb4286bdfee5d6fc43f38ddc402b4fe2965731c57e8b96cca4c62",
+  "circuit_breakers": null,
+  "cluster_key": "data-internal-to-internal-jwt-cluster",
+  "health_checks": [],
+  "instances": [
+    {
+      "host": "10.42.2.4",
+      "metadata": [
+        {
+          "key": "pod-template-hash",
+          "value": "59c957797d"
+        },
+        {
+          "key": "deployment",
+          "value": "internal-jwt-security"
+        },
+        {
+          "key": "gm_control_discovery",
+          "value": "true"
+        },
+        {
+          "key": "gm_k8s_host_ip",
+          "value": "172.24.0.3"
+        },
+        {
+          "key": "gm_k8s_node_name",
+          "value": "k3d-greymatter-agent-0"
+        }
+      ],
+      "port": 10808
+    }
+  ],
+  "lb_policy": "",
+  "name": "internal-jwt-security",
+  "outlier_detection": null,
+  "require_tls": true,
+  "secret": {
+    "checksum": "e2d98cd20a9a4ee8818590dc173898f8eebfe0e81b07a5dcfec7b04c62fa4afd",
+    "ecdh_curves": [
+      "X25519:P-256:P-521:P-384"
+    ],
+    "secret_key": "secret-internal-jwt-security-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/data-internal",
+    "secret_validation_name": "spiffe://quickstart.greymatter.io",
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "subject_names": [
+      "spiffe://quickstart.greymatter.io/internal-jwt-security"
+    ]
+  },
+  "zone_key": "zone-default-zone"
+}

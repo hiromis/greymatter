@@ -1,0 +1,20 @@
+{
+  "checksum": "c750a4c6676524ddd68b8bf4933eda4ff9c72f44880047b8786caa339b59fabc",
+  "cohort_seed": null,
+  "domain_key": "edge",
+  "filter_metadata": null,
+  "high_priority": false,
+  "path": "/services/data-internal/latest/",
+  "prefix_rewrite": "/",
+  "redirects": null,
+  "response_data": {},
+  "retry_policy": null,
+  "route_key": "edge-data-internal-route",
+  "route_match": {
+    "match_type": "",
+    "path": ""
+  },
+  "rules": null,
+  "shared_rules_key": "",
+  "zone_key": "zone-default-zone"
+}

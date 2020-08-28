@@ -1,0 +1,28 @@
+{
+  "checksum": "19bd2fb38a40c63669376b25d74bf347bd2ee75e21f3e7f6b2a2cb336fc426d1",
+  "circuit_breakers": null,
+  "cluster_key": "cluster-catalog",
+  "health_checks": [],
+  "instances": [
+    {
+      "host": "0.0.0.0",
+      "metadata": null,
+      "port": 9080
+    }
+  ],
+  "lb_policy": "",
+  "name": "catalog-service",
+  "outlier_detection": null,
+  "secret": {
+    "checksum": "",
+    "ecdh_curves": null,
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "subject_names": null
+  },
+  "zone_key": "zone-default-zone"
+}

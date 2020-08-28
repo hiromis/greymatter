@@ -1,0 +1,28 @@
+{
+  "checksum": "4c71686a5fd0fbf20b1ab72744fadaeb2800c2c5d59fa0af12a694874c3fb3d7",
+  "circuit_breakers": null,
+  "cluster_key": "cluster-prometheus",
+  "health_checks": [],
+  "instances": [
+    {
+      "host": "0.0.0.0",
+      "metadata": null,
+      "port": 9090
+    }
+  ],
+  "lb_policy": "",
+  "name": "prometheus-service",
+  "outlier_detection": null,
+  "secret": {
+    "checksum": "",
+    "ecdh_curves": null,
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "subject_names": null
+  },
+  "zone_key": "zone-default-zone"
+}

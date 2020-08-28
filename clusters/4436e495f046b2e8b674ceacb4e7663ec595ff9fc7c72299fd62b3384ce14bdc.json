@@ -1,0 +1,58 @@
+{
+  "checksum": "4436e495f046b2e8b674ceacb4e7663ec595ff9fc7c72299fd62b3384ce14bdc",
+  "circuit_breakers": null,
+  "cluster_key": "edge-to-control-api-cluster",
+  "health_checks": [],
+  "instances": [
+    {
+      "host": "10.42.4.6",
+      "metadata": [
+        {
+          "key": "statefulset.kubernetes.io/pod-name",
+          "value": "control-api-0"
+        },
+        {
+          "key": "controller-revision-hash",
+          "value": "control-api-548f8494bb"
+        },
+        {
+          "key": "deployment",
+          "value": "control-api"
+        },
+        {
+          "key": "gm_control_discovery",
+          "value": "true"
+        },
+        {
+          "key": "gm_k8s_host_ip",
+          "value": "172.24.0.2"
+        },
+        {
+          "key": "gm_k8s_node_name",
+          "value": "k3d-greymatter-server-0"
+        }
+      ],
+      "port": 10808
+    }
+  ],
+  "lb_policy": "",
+  "name": "control-api",
+  "outlier_detection": null,
+  "require_tls": true,
+  "secret": {
+    "checksum": "9761c25dc055e78feb1fd313e0c9911d18507c287807b7121eb6a9d14ef2b6c6",
+    "ecdh_curves": [
+      "X25519:P-256:P-521:P-384"
+    ],
+    "secret_key": "secret-control-api-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/edge",
+    "secret_validation_name": "spiffe://quickstart.greymatter.io",
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "subject_names": [
+      "spiffe://quickstart.greymatter.io/control-api"
+    ]
+  },
+  "zone_key": "zone-default-zone"
+}

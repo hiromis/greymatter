@@ -1,0 +1,28 @@
+{
+  "checksum": "0a5266b70020958bc0e43fae59d2bd27ad77cb8e5a8681f6425bb747943ad090",
+  "circuit_breakers": null,
+  "cluster_key": "cluster-dashboard",
+  "health_checks": [],
+  "instances": [
+    {
+      "host": "0.0.0.0",
+      "metadata": null,
+      "port": 1337
+    }
+  ],
+  "lb_policy": "",
+  "name": "dashboard-service",
+  "outlier_detection": null,
+  "secret": {
+    "checksum": "",
+    "ecdh_curves": null,
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "subject_names": null
+  },
+  "zone_key": "zone-default-zone"
+}

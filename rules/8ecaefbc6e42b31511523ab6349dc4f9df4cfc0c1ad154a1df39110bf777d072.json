@@ -1,0 +1,25 @@
+{
+  "checksum": "8ecaefbc6e42b31511523ab6349dc4f9df4cfc0c1ad154a1df39110bf777d072",
+  "cohort_seed": null,
+  "default": {
+    "dark": null,
+    "light": [
+      {
+        "cluster_key": "data-internal-to-internal-jwt-cluster",
+        "constraint_key": "",
+        "metadata": null,
+        "properties": null,
+        "response_data": {},
+        "weight": 1
+      }
+    ],
+    "tap": null
+  },
+  "name": "data-internal",
+  "properties": null,
+  "response_data": {},
+  "retry_policy": null,
+  "rules": null,
+  "shared_rules_key": "shared-rules-data-internal-to-internal-jwt",
+  "zone_key": "zone-default-zone"
+}

@@ -1,0 +1,25 @@
+{
+  "checksum": "afe2d3a44b2e444c0fe0f82a7aea8a2606158a29a8f23d0a6ca13fb8ed972aba",
+  "cohort_seed": null,
+  "default": {
+    "dark": null,
+    "light": [
+      {
+        "cluster_key": "edge-to-catalog-cluster",
+        "constraint_key": "",
+        "metadata": null,
+        "properties": null,
+        "response_data": {},
+        "weight": 1
+      }
+    ],
+    "tap": null
+  },
+  "name": "catalog",
+  "properties": null,
+  "response_data": {},
+  "retry_policy": null,
+  "rules": null,
+  "shared_rules_key": "edge-catalog-shared-rules",
+  "zone_key": "zone-default-zone"
+}

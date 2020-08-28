@@ -1,0 +1,20 @@
+{
+  "checksum": "983ab863ec08d38cb65bddb3ef4a291b064dcc5191f621fa8ad724a57efcf5b9",
+  "cohort_seed": null,
+  "domain_key": "edge",
+  "filter_metadata": null,
+  "high_priority": false,
+  "path": "/services/internal-jwt-security/latest/",
+  "prefix_rewrite": "/",
+  "redirects": null,
+  "response_data": {},
+  "retry_policy": null,
+  "route_key": "edge-internal-jwt-security-route",
+  "route_match": {
+    "match_type": "",
+    "path": ""
+  },
+  "rules": null,
+  "shared_rules_key": "",
+  "zone_key": "zone-default-zone"
+}

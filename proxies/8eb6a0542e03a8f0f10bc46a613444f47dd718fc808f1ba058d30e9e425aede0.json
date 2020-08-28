@@ -1,0 +1,18 @@
+{
+  "active_proxy_filters": null,
+  "checksum": "8eb6a0542e03a8f0f10bc46a613444f47dd718fc808f1ba058d30e9e425aede0",
+  "domain_keys": [
+    "domain-slo",
+    "domain-slo-egress"
+  ],
+  "listener_keys": [
+    "listener-slo",
+    "listener-slo-egress"
+  ],
+  "listeners": null,
+  "name": "slo",
+  "proxy_filters": null,
+  "proxy_key": "proxy-slo",
+  "upgrades": "",
+  "zone_key": "zone-default-zone"
+}

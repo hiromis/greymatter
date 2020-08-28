@@ -1,0 +1,104 @@
+{
+  "active_http_filters": [
+    "gm.metrics",
+    "envoy.rbac"
+  ],
+  "active_network_filters": null,
+  "checksum": "20d9908bbe20de898b515584ac9c629ebc678d47fd1368c218fb1c5bc36392d6",
+  "domain_keys": [
+    "domain-data-internal"
+  ],
+  "http_filters": {
+    "envoy_rbac": {
+      "rules": {
+        "action": 0,
+        "policies": {
+          "product-viewer": {
+            "permissions": [
+              {
+                "header": {
+                  "exact_match": "GET",
+                  "name": ":method"
+                }
+              }
+            ],
+            "principals": [
+              {
+                "any": true
+              }
+            ]
+          },
+          "service-admin": {
+            "permissions": [
+              {
+                "any": true
+              }
+            ],
+            "principals": [
+              {
+                "header": {
+                  "exact_match": "CN=quickstart,OU=Engineering,O=Decipher Technology Studios,L=Alexandria,ST=Virginia,C=US",
+                  "name": "user_dn"
+                }
+              }
+            ]
+          },
+          "services": {
+            "permissions": [
+              {
+                "any": true
+              }
+            ],
+            "principals": [
+              {
+                "authenticated": {
+                  "principal_name": {
+                    "safe_regex": {
+                      "google_re2": {},
+                      "regex": "spiffe://quickstart.greymatter.io/(.+)"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "gm_metrics": {
+      "metrics_dashboard_uri_path": "/metrics",
+      "metrics_host": "0.0.0.0",
+      "metrics_key_depth": "3",
+      "metrics_key_function": "depth",
+      "metrics_port": 8081,
+      "metrics_prometheus_uri_path": "/prometheus",
+      "metrics_ring_buffer_size": 4096,
+      "prometheus_system_metrics_interval_seconds": 15
+    }
+  },
+  "ip": "0.0.0.0",
+  "listener_key": "listener-data-internal",
+  "name": "data-internal",
+  "network_filters": null,
+  "port": 10808,
+  "protocol": "http_auto",
+  "secret": {
+    "checksum": "1649a0d8c080dcdb0ae92b417f410853f6cbaef5a317d407db3268112675b993",
+    "ecdh_curves": [
+      "X25519:P-256:P-521:P-384"
+    ],
+    "forward_client_cert_details": "APPEND_FORWARD",
+    "secret_key": "secret-data-internal-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/data-internal",
+    "secret_validation_name": "spiffe://quickstart.greymatter.io",
+    "set_current_client_cert_details": {
+      "uri": true
+    },
+    "subject_names": [
+      "spiffe://quickstart.greymatter.io/edge",
+      "spiffe://quickstart.greymatter.io/catalog"
+    ]
+  },
+  "tracing_config": null,
+  "zone_key": "zone-default-zone"
+}

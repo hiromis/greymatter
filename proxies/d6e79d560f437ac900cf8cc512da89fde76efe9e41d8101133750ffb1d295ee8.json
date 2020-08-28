@@ -1,0 +1,18 @@
+{
+  "active_proxy_filters": null,
+  "checksum": "d6e79d560f437ac900cf8cc512da89fde76efe9e41d8101133750ffb1d295ee8",
+  "domain_keys": [
+    "domain-internal-jwt-security",
+    "domain-internal-jwt-security-egress"
+  ],
+  "listener_keys": [
+    "listener-internal-jwt-security",
+    "listener-internal-jwt-security-egress"
+  ],
+  "listeners": null,
+  "name": "internal-jwt-security",
+  "proxy_filters": null,
+  "proxy_key": "proxy-internal-jwt-security",
+  "upgrades": "",
+  "zone_key": "zone-default-zone"
+}

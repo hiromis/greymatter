@@ -1,0 +1,28 @@
+{
+  "checksum": "9724049f38433b78cdec22dbee21c0c34263e035c23ade6d4f49c4af145020ec",
+  "circuit_breakers": null,
+  "cluster_key": "cluster-control-api",
+  "health_checks": [],
+  "instances": [
+    {
+      "host": "0.0.0.0",
+      "metadata": null,
+      "port": 5555
+    }
+  ],
+  "lb_policy": "",
+  "name": "control-api-service",
+  "outlier_detection": null,
+  "secret": {
+    "checksum": "",
+    "ecdh_curves": null,
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "subject_names": null
+  },
+  "zone_key": "zone-default-zone"
+}

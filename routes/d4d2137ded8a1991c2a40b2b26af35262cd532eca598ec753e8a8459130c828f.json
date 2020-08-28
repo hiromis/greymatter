@@ -1,0 +1,20 @@
+{
+  "checksum": "d4d2137ded8a1991c2a40b2b26af35262cd532eca598ec753e8a8459130c828f",
+  "cohort_seed": null,
+  "domain_key": "domain-catalog-egress",
+  "filter_metadata": null,
+  "high_priority": false,
+  "path": "/data/",
+  "prefix_rewrite": "/",
+  "redirects": null,
+  "response_data": {},
+  "retry_policy": null,
+  "route_key": "catalog-internal-data-route",
+  "route_match": {
+    "match_type": "",
+    "path": ""
+  },
+  "rules": null,
+  "shared_rules_key": "",
+  "zone_key": "zone-default-zone"
+}

@@ -1,0 +1,25 @@
+{
+  "checksum": "577a3e422e5518b447beb2630b573200185ed45ddee00fcd1d34295cf6997ccf",
+  "cohort_seed": null,
+  "default": {
+    "dark": null,
+    "light": [
+      {
+        "cluster_key": "cluster-jwt-security",
+        "constraint_key": "",
+        "metadata": null,
+        "properties": null,
+        "response_data": {},
+        "weight": 1
+      }
+    ],
+    "tap": null
+  },
+  "name": "jwt-security",
+  "properties": null,
+  "response_data": {},
+  "retry_policy": null,
+  "rules": null,
+  "shared_rules_key": "shared-rules-jwt-security",
+  "zone_key": "zone-default-zone"
+}

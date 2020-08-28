@@ -1,0 +1,25 @@
+{
+  "checksum": "f75aab3ecfda8f75356bee70e3e9c7e75c614a7f66d390006e10e47bdd4beeca",
+  "cohort_seed": null,
+  "default": {
+    "dark": null,
+    "light": [
+      {
+        "cluster_key": "edge-to-prometheus-cluster",
+        "constraint_key": "",
+        "metadata": null,
+        "properties": null,
+        "response_data": {},
+        "weight": 1
+      }
+    ],
+    "tap": null
+  },
+  "name": "prometheus",
+  "properties": null,
+  "response_data": {},
+  "retry_policy": null,
+  "rules": null,
+  "shared_rules_key": "edge-prometheus-shared-rules",
+  "zone_key": "zone-default-zone"
+}

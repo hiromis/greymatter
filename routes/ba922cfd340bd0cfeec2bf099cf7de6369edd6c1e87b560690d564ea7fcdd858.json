@@ -1,0 +1,20 @@
+{
+  "checksum": "ba922cfd340bd0cfeec2bf099cf7de6369edd6c1e87b560690d564ea7fcdd858",
+  "cohort_seed": null,
+  "domain_key": "domain-jwt-security",
+  "filter_metadata": null,
+  "high_priority": false,
+  "path": "/",
+  "prefix_rewrite": "",
+  "redirects": null,
+  "response_data": {},
+  "retry_policy": null,
+  "route_key": "route-jwt-security",
+  "route_match": {
+    "match_type": "",
+    "path": ""
+  },
+  "rules": null,
+  "shared_rules_key": "",
+  "zone_key": "zone-default-zone"
+}

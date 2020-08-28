@@ -1,0 +1,18 @@
+{
+  "active_proxy_filters": null,
+  "checksum": "ac029b109f46624151fe40131bf833ab347d9069ef99bbd54a00f86326edac7e",
+  "domain_keys": [
+    "domain-catalog",
+    "domain-catalog-egress"
+  ],
+  "listener_keys": [
+    "listener-catalog",
+    "listener-catalog-egress"
+  ],
+  "listeners": null,
+  "name": "catalog",
+  "proxy_filters": null,
+  "proxy_key": "proxy-catalog",
+  "upgrades": "",
+  "zone_key": "zone-default-zone"
+}

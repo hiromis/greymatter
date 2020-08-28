@@ -1,0 +1,20 @@
+{
+  "checksum": "b5eef32c241c0d8ee9d74c788857ef71dead041f03d75ac0465a88398869e760",
+  "cohort_seed": null,
+  "domain_key": "domain-data-internal-egress",
+  "filter_metadata": null,
+  "high_priority": false,
+  "path": "/jwt/",
+  "prefix_rewrite": "/",
+  "redirects": null,
+  "response_data": {},
+  "retry_policy": null,
+  "route_key": "route-data-internal-internal-jwt-slash",
+  "route_match": {
+    "match_type": "",
+    "path": ""
+  },
+  "rules": null,
+  "shared_rules_key": "",
+  "zone_key": "zone-default-zone"
+}

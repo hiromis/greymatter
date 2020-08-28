@@ -1,0 +1,25 @@
+{
+  "checksum": "fe9aa33900880e70f2ce7c5c31dc39bdecff63d4c5029fe8628ac5cf39d902c8",
+  "cohort_seed": null,
+  "default": {
+    "dark": null,
+    "light": [
+      {
+        "cluster_key": "cluster-prometheus",
+        "constraint_key": "",
+        "metadata": null,
+        "properties": null,
+        "response_data": {},
+        "weight": 1
+      }
+    ],
+    "tap": null
+  },
+  "name": "prometheus",
+  "properties": null,
+  "response_data": {},
+  "retry_policy": null,
+  "rules": null,
+  "shared_rules_key": "shared-rules-prometheus",
+  "zone_key": "zone-default-zone"
+}
