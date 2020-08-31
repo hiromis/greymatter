@@ -1,19 +1,19 @@
 {
-  "checksum": "ebef72b8c53fba7d00f14320231ec57233fd3b18b88872be3187b286b47479a2",
+  "checksum": "78ce3f60d238baff5e2e81fbba18f433cce7ca1c5c2e0fa7c5a49b3bf6b9a143",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-catalog-cluster",
+  "cluster_key": "edge-to-jwt-security-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.2.6",
+      "host": "10.42.3.4",
       "metadata": [
         {
           "key": "deployment",
-          "value": "catalog"
+          "value": "jwt-security"
         },
         {
           "key": "pod-template-hash",
-          "value": "6b88965bfb"
+          "value": "55c4c8df4"
         },
         {
           "key": "gm_control_discovery",
@@ -32,22 +32,22 @@
     }
   ],
   "lb_policy": "",
-  "name": "catalog",
+  "name": "jwt-security",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "checksum": "157df0d73942b091b0052b1897a6f556813e9b0523709b6dfd2ec0b6b67cfd54",
+    "checksum": "5695bd579654e26d13635813e9571774116b5dd854eba2eaeea50b3cfd3279c3",
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
     ],
-    "secret_key": "secret-catalog-secret",
+    "secret_key": "secret-jwt-security-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "set_current_client_cert_details": {
       "uri": false
     },
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/catalog"
+      "spiffe://quickstart.greymatter.io/jwt-security"
     ]
   },
   "zone_key": "zone-default-zone"

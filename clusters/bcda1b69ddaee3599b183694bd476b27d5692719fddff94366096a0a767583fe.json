@@ -1,11 +1,11 @@
 {
-  "checksum": "33acad43eb814df805b41fc2bd115e6ea980fb8fed865b1ff9a0e63cea76d836",
+  "checksum": "bcda1b69ddaee3599b183694bd476b27d5692719fddff94366096a0a767583fe",
   "circuit_breakers": null,
   "cluster_key": "edge-to-prometheus-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.2.8",
+      "host": "10.42.4.13",
       "metadata": [
         {
           "key": "controller-revision-hash",
@@ -25,11 +25,11 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.3"
+          "value": "172.24.0.6"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-0"
+          "value": "k3d-greymatter-agent-3"
         }
       ],
       "port": 10808

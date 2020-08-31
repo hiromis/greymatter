@@ -1,23 +1,19 @@
 {
-  "checksum": "4436e495f046b2e8b674ceacb4e7663ec595ff9fc7c72299fd62b3384ce14bdc",
+  "checksum": "ce1b7f8da23adb7a160451accd4c731eea350bd9e9255825d02a609bef64cf8b",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-control-api-cluster",
+  "cluster_key": "edge-to-data-internal-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.4.6",
+      "host": "10.42.4.10",
       "metadata": [
         {
-          "key": "statefulset.kubernetes.io/pod-name",
-          "value": "control-api-0"
-        },
-        {
           "key": "controller-revision-hash",
-          "value": "control-api-548f8494bb"
+          "value": "data-internal-7cdfccd584"
         },
         {
-          "key": "deployment",
-          "value": "control-api"
+          "key": "statefulset.kubernetes.io/pod-name",
+          "value": "data-internal-0"
         },
         {
           "key": "gm_control_discovery",
@@ -25,33 +21,33 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.2"
+          "value": "172.24.0.6"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-server-0"
+          "value": "k3d-greymatter-agent-3"
         }
       ],
       "port": 10808
     }
   ],
   "lb_policy": "",
-  "name": "control-api",
+  "name": "data-internal",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "checksum": "9761c25dc055e78feb1fd313e0c9911d18507c287807b7121eb6a9d14ef2b6c6",
+    "checksum": "5fddbfea0d138a710c9eac185f91b606dc70ceb0a47eaba9c3262153b69ffa6a",
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
     ],
-    "secret_key": "secret-control-api-secret",
+    "secret_key": "secret-data-internal-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "set_current_client_cert_details": {
       "uri": false
     },
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/control-api"
+      "spiffe://quickstart.greymatter.io/data-internal"
     ]
   },
   "zone_key": "zone-default-zone"
