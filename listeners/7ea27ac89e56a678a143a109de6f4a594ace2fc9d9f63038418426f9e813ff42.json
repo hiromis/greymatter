@@ -4,9 +4,9 @@
     "envoy.rbac"
   ],
   "active_network_filters": null,
-  "checksum": "edcc5805803d9bcc72552c43c9bdfa0aaaa1f433845d05f78057251a64d9023f",
+  "checksum": "7ea27ac89e56a678a143a109de6f4a594ace2fc9d9f63038418426f9e813ff42",
   "domain_keys": [
-    "domain-slo"
+    "domain-prometheus"
   ],
   "http_filters": {
     "envoy_rbac": {
@@ -77,19 +77,19 @@
     }
   },
   "ip": "0.0.0.0",
-  "listener_key": "listener-slo",
-  "name": "slo",
+  "listener_key": "listener-prometheus",
+  "name": "prometheus",
   "network_filters": null,
   "port": 10808,
   "protocol": "http_auto",
   "secret": {
-    "checksum": "cb981f53e1d87de576c67dc76c2719c525ec90b770e7992f826d93423859c206",
+    "checksum": "f64c42aef8665bf0bab272731d178d3a20f2f974c3d748d7dbf8acac82762395",
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
     ],
     "forward_client_cert_details": "APPEND_FORWARD",
-    "secret_key": "secret-slo-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/slo",
+    "secret_key": "secret-prometheus-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/prometheus",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "set_current_client_cert_details": {
       "uri": true

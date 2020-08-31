@@ -4,9 +4,9 @@
     "envoy.rbac"
   ],
   "active_network_filters": null,
-  "checksum": "050fa47bbc1046aa7750d7f5140a958b2fb79c1ac1a892178b70b03b8c8cc69f",
+  "checksum": "fc55722d3142e96b5c5111ccdcfdb7535bcba98f268423b5ed2af5084aa70914",
   "domain_keys": [
-    "domain-control-api"
+    "domain-internal-jwt-security"
   ],
   "http_filters": {
     "envoy_rbac": {
@@ -77,25 +77,26 @@
     }
   },
   "ip": "0.0.0.0",
-  "listener_key": "listener-control-api",
-  "name": "control-api",
+  "listener_key": "listener-internal-jwt-security",
+  "name": "internal-jwt-security",
   "network_filters": null,
   "port": 10808,
   "protocol": "http_auto",
   "secret": {
-    "checksum": "94ac2b4b73d7e633eee9594c515570b0f24d09bd4f39ea8d903dea8e339af8af",
+    "checksum": "5c9d83428b5a60d2ef04126aba7ae4e8140f1e4d858b4620afeeda3f238b49af",
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
     ],
     "forward_client_cert_details": "APPEND_FORWARD",
-    "secret_key": "secret-control-api-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/control-api",
+    "secret_key": "secret-internal-jwt-security-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/internal-jwt-security",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "set_current_client_cert_details": {
       "uri": true
     },
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/edge"
+      "spiffe://quickstart.greymatter.io/edge",
+      "spiffe://quickstart.greymatter.io/data-internal"
     ]
   },
   "tracing_config": null,
