@@ -4,9 +4,9 @@
     "envoy.rbac"
   ],
   "active_network_filters": null,
-  "checksum": "0fa8958b3420df2045b93b5d92bdd36442a5365f9392789ba055acf365d7f153",
+  "checksum": "d59c8070846afecd9dd55eb33245c8c076e2868b10f5c7cd7002b8f5482a9fdb",
   "domain_keys": [
-    "domain-data-internal"
+    "domain-catalog"
   ],
   "http_filters": {
     "envoy_rbac": {
@@ -77,26 +77,25 @@
     }
   },
   "ip": "0.0.0.0",
-  "listener_key": "listener-data-internal",
-  "name": "data-internal",
+  "listener_key": "listener-catalog",
+  "name": "catalog",
   "network_filters": null,
   "port": 10808,
   "protocol": "http_auto",
   "secret": {
-    "checksum": "1649a0d8c080dcdb0ae92b417f410853f6cbaef5a317d407db3268112675b993",
+    "checksum": "c433113318c0d0fe155a5c61c26003c6653f08cf96bdc9a109dace25f44bebd7",
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
     ],
     "forward_client_cert_details": "APPEND_FORWARD",
-    "secret_key": "secret-data-internal-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/data-internal",
+    "secret_key": "secret-catalog-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/catalog",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "set_current_client_cert_details": {
       "uri": true
     },
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/edge",
-      "spiffe://quickstart.greymatter.io/catalog"
+      "spiffe://quickstart.greymatter.io/edge"
     ]
   },
   "tracing_config": null,

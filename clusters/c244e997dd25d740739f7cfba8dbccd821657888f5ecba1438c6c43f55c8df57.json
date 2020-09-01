@@ -1,11 +1,11 @@
 {
-  "checksum": "6da26a322e805aa31a3858e9dcfc96a6279972250c14e0e7b21813850118b314",
+  "checksum": "c244e997dd25d740739f7cfba8dbccd821657888f5ecba1438c6c43f55c8df57",
   "circuit_breakers": null,
   "cluster_key": "cluster-edge",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.4.7",
+      "host": "10.42.1.5",
       "metadata": [
         {
           "key": "pod-template-hash",

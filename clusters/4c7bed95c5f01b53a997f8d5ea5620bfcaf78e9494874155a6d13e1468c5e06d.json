@@ -1,15 +1,23 @@
 {
-  "checksum": "894c2ffa25a09e45af6ea4c59c934586926ed9c9f22ea7314a1fca830995956a",
+  "checksum": "4c7bed95c5f01b53a997f8d5ea5620bfcaf78e9494874155a6d13e1468c5e06d",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-dashboard-cluster",
+  "cluster_key": "edge-to-control-api-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.3.7",
+      "host": "10.42.0.6",
       "metadata": [
         {
-          "key": "pod-template-hash",
-          "value": "7959bc8cb4"
+          "key": "statefulset.kubernetes.io/pod-name",
+          "value": "control-api-0"
+        },
+        {
+          "key": "controller-revision-hash",
+          "value": "control-api-548f8494bb"
+        },
+        {
+          "key": "deployment",
+          "value": "control-api"
         },
         {
           "key": "gm_control_discovery",
@@ -28,22 +36,22 @@
     }
   ],
   "lb_policy": "",
-  "name": "dashboard",
+  "name": "control-api",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "checksum": "cdc4c1da9d14f68186fda8e7f9fbaadc9354d2de6c83fab10ad672d51770a102",
+    "checksum": "9761c25dc055e78feb1fd313e0c9911d18507c287807b7121eb6a9d14ef2b6c6",
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
     ],
-    "secret_key": "secret-dashboard-secret",
+    "secret_key": "secret-control-api-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "set_current_client_cert_details": {
       "uri": false
     },
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/dashboard"
+      "spiffe://quickstart.greymatter.io/control-api"
     ]
   },
   "zone_key": "zone-default-zone"

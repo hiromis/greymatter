@@ -1,19 +1,19 @@
 {
-  "checksum": "78ce3f60d238baff5e2e81fbba18f433cce7ca1c5c2e0fa7c5a49b3bf6b9a143",
+  "checksum": "1250fab374de30e54e979a55e9c959dfb0e0900a01bd8018cebd557dfb6c3a5e",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-jwt-security-cluster",
+  "cluster_key": "edge-to-data-internal-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.3.4",
+      "host": "10.42.2.9",
       "metadata": [
         {
-          "key": "deployment",
-          "value": "jwt-security"
+          "key": "controller-revision-hash",
+          "value": "data-internal-7cdfccd584"
         },
         {
-          "key": "pod-template-hash",
-          "value": "55c4c8df4"
+          "key": "statefulset.kubernetes.io/pod-name",
+          "value": "data-internal-0"
         },
         {
           "key": "gm_control_discovery",
@@ -21,33 +21,33 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.3"
+          "value": "172.24.0.4"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-0"
+          "value": "k3d-greymatter-agent-1"
         }
       ],
       "port": 10808
     }
   ],
   "lb_policy": "",
-  "name": "jwt-security",
+  "name": "data-internal",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "checksum": "5695bd579654e26d13635813e9571774116b5dd854eba2eaeea50b3cfd3279c3",
+    "checksum": "5fddbfea0d138a710c9eac185f91b606dc70ceb0a47eaba9c3262153b69ffa6a",
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
     ],
-    "secret_key": "secret-jwt-security-secret",
+    "secret_key": "secret-data-internal-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "set_current_client_cert_details": {
       "uri": false
     },
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/jwt-security"
+      "spiffe://quickstart.greymatter.io/data-internal"
     ]
   },
   "zone_key": "zone-default-zone"

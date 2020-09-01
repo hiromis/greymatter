@@ -4,9 +4,9 @@
     "envoy.rbac"
   ],
   "active_network_filters": null,
-  "checksum": "f9a8c1b32a8272c4abb654b541ea3c422920fcf6a1c5f0a507090a19225f08d6",
+  "checksum": "de2f81135281fc3d71518ea8fd3f71e0fe7a0c0b8a99a2c21d98ba6b47d7211d",
   "domain_keys": [
-    "domain-catalog"
+    "domain-jwt-security"
   ],
   "http_filters": {
     "envoy_rbac": {
@@ -77,19 +77,19 @@
     }
   },
   "ip": "0.0.0.0",
-  "listener_key": "listener-catalog",
-  "name": "catalog",
+  "listener_key": "listener-jwt-security",
+  "name": "jwt-security",
   "network_filters": null,
   "port": 10808,
   "protocol": "http_auto",
   "secret": {
-    "checksum": "c433113318c0d0fe155a5c61c26003c6653f08cf96bdc9a109dace25f44bebd7",
+    "checksum": "beebf349f27d0038e667849006e84ab6e396ee143d049b0bb6fca2769fde40f3",
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
     ],
     "forward_client_cert_details": "APPEND_FORWARD",
-    "secret_key": "secret-catalog-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/catalog",
+    "secret_key": "secret-jwt-security-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/jwt-security",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "set_current_client_cert_details": {
       "uri": true
