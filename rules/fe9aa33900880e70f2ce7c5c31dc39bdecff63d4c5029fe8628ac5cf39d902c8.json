@@ -2,17 +2,17 @@
   "checksum": "fe9aa33900880e70f2ce7c5c31dc39bdecff63d4c5029fe8628ac5cf39d902c8",
   "cohort_seed": null,
   "default": {
-    "dark": null,
     "light": [
       {
-        "cluster_key": "cluster-prometheus",
         "constraint_key": "",
+        "cluster_key": "cluster-prometheus",
         "metadata": null,
         "properties": null,
         "response_data": {},
         "weight": 1
       }
     ],
+    "dark": null,
     "tap": null
   },
   "name": "prometheus",

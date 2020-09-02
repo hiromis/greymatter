@@ -2,17 +2,17 @@
   "checksum": "5524aee5b1e7df2d7a6d066520c08b11914517bd83638eb5110240b0759ea87d",
   "cohort_seed": null,
   "default": {
-    "dark": null,
     "light": [
       {
-        "cluster_key": "edge-to-internal-jwt-security-cluster",
         "constraint_key": "",
+        "cluster_key": "edge-to-internal-jwt-security-cluster",
         "metadata": null,
         "properties": null,
         "response_data": {},
         "weight": 1
       }
     ],
+    "dark": null,
     "tap": null
   },
   "name": "internal-jwt-security",

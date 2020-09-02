@@ -2,17 +2,17 @@
   "checksum": "55c889feabb27f163b3ee431997a49e37042611b9cee7ec201c114025da47726",
   "cohort_seed": null,
   "default": {
-    "dark": null,
     "light": [
       {
-        "cluster_key": "edge-to-data-internal-cluster",
         "constraint_key": "",
+        "cluster_key": "edge-to-data-internal-cluster",
         "metadata": null,
         "properties": null,
         "response_data": {},
         "weight": 1
       }
     ],
+    "dark": null,
     "tap": null
   },
   "name": "data-internal",

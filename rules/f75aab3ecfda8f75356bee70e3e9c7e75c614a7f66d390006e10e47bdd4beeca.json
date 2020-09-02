@@ -2,17 +2,17 @@
   "checksum": "f75aab3ecfda8f75356bee70e3e9c7e75c614a7f66d390006e10e47bdd4beeca",
   "cohort_seed": null,
   "default": {
-    "dark": null,
     "light": [
       {
-        "cluster_key": "edge-to-prometheus-cluster",
         "constraint_key": "",
+        "cluster_key": "edge-to-prometheus-cluster",
         "metadata": null,
         "properties": null,
         "response_data": {},
         "weight": 1
       }
     ],
+    "dark": null,
     "tap": null
   },
   "name": "prometheus",

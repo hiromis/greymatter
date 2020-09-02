@@ -2,17 +2,17 @@
   "checksum": "8ecaefbc6e42b31511523ab6349dc4f9df4cfc0c1ad154a1df39110bf777d072",
   "cohort_seed": null,
   "default": {
-    "dark": null,
     "light": [
       {
-        "cluster_key": "data-internal-to-internal-jwt-cluster",
         "constraint_key": "",
+        "cluster_key": "data-internal-to-internal-jwt-cluster",
         "metadata": null,
         "properties": null,
         "response_data": {},
         "weight": 1
       }
     ],
+    "dark": null,
     "tap": null
   },
   "name": "data-internal",

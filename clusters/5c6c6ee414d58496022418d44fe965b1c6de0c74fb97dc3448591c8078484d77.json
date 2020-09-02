@@ -1,11 +1,12 @@
 {
-  "checksum": "a9b4e3a968ca8096f1e6a0882c68d40542b1414290d32a034c24ad86ebfc048e",
+  "checksum": "5c6c6ee414d58496022418d44fe965b1c6de0c74fb97dc3448591c8078484d77",
   "circuit_breakers": null,
-  "cluster_key": "catalog-to-data-internal-cluster",
+  "cluster_key": "edge-to-data-internal-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.2.9",
+      "host": "10.42.1.8",
+      "port": 10808,
       "metadata": [
         {
           "key": "controller-revision-hash",
@@ -21,14 +22,13 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.4"
+          "value": "172.24.0.2"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-1"
+          "value": "k3d-greymatter-server-0"
         }
-      ],
-      "port": 10808
+      ]
     }
   ],
   "lb_policy": "",
@@ -36,19 +36,19 @@
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "checksum": "735e9428352ddd2600ec5fc3ec26137e7dc4731c6e1f2037f8d2451505da26b4",
+    "secret_key": "secret-data-internal-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/edge",
+    "secret_validation_name": "spiffe://quickstart.greymatter.io",
+    "subject_names": [
+      "spiffe://quickstart.greymatter.io/data-internal"
+    ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
     ],
-    "secret_key": "secret-data-internal-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/catalog",
-    "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "set_current_client_cert_details": {
       "uri": false
     },
-    "subject_names": [
-      "spiffe://quickstart.greymatter.io/data-internal"
-    ]
+    "checksum": "5fddbfea0d138a710c9eac185f91b606dc70ceb0a47eaba9c3262153b69ffa6a"
   },
   "zone_key": "zone-default-zone"
 }

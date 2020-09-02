@@ -2,17 +2,17 @@
   "checksum": "e8e74712896918801bd1dbecc4ddf3e6af4215d3dbc3027cc67b2e28f9cb4716",
   "cohort_seed": null,
   "default": {
-    "dark": null,
     "light": [
       {
-        "cluster_key": "cluster-catalog",
         "constraint_key": "",
+        "cluster_key": "cluster-catalog",
         "metadata": null,
         "properties": null,
         "response_data": {},
         "weight": 1
       }
     ],
+    "dark": null,
     "tap": null
   },
   "name": "catalog",

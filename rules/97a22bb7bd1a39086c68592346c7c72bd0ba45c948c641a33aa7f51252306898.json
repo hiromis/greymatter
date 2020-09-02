@@ -2,17 +2,17 @@
   "checksum": "97a22bb7bd1a39086c68592346c7c72bd0ba45c948c641a33aa7f51252306898",
   "cohort_seed": null,
   "default": {
-    "dark": null,
     "light": [
       {
-        "cluster_key": "edge-to-slo-cluster",
         "constraint_key": "",
+        "cluster_key": "edge-to-slo-cluster",
         "metadata": null,
         "properties": null,
         "response_data": {},
         "weight": 1
       }
     ],
+    "dark": null,
     "tap": null
   },
   "name": "slo",

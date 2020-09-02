@@ -1,20 +1,20 @@
 {
-  "checksum": "bcc817c02801198b740daac5eeb5f172d692b9c3ab53db596e6dfc3836720925",
+  "checksum": "cb3a96cfa56291fc28af1b691217f47579f301f979e46ce1ea94012b0b966c52",
   "cohort_seed": null,
   "domain_key": "edge",
   "filter_metadata": null,
   "high_priority": false,
-  "path": "/services/control-api/latest/",
-  "prefix_rewrite": "/",
+  "path": "/services/lad/latest",
+  "prefix_rewrite": "/services/lad/latest/",
   "redirects": null,
   "response_data": {},
   "retry_policy": null,
-  "route_key": "edge-control-api-route",
+  "route_key": "route-edge-lad",
   "route_match": {
     "path": "",
     "match_type": ""
   },
   "rules": null,
-  "shared_rules_key": "edge-control-api-shared-rules",
+  "shared_rules_key": "sr-edge-lad",
   "zone_key": "zone-default-zone"
 }

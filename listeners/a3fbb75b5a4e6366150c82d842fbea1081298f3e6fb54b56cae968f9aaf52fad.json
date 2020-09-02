@@ -16,15 +16,15 @@
   "port": 10909,
   "protocol": "http_auto",
   "secret": {
-    "checksum": "",
-    "ecdh_curves": null,
     "secret_key": "",
     "secret_name": "",
     "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
     "set_current_client_cert_details": {
       "uri": false
     },
-    "subject_names": null
+    "checksum": ""
   },
   "tracing_config": null,
   "zone_key": "zone-default-zone"

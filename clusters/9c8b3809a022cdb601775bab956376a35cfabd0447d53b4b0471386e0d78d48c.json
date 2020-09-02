@@ -1,16 +1,13 @@
 {
-  "checksum": "1c3d5ce7b0272c3f2f750a3bdd10f7d43786a5fa2b86dde2698e7dc1d49ff60b",
+  "checksum": "9c8b3809a022cdb601775bab956376a35cfabd0447d53b4b0471386e0d78d48c",
   "circuit_breakers": null,
   "cluster_key": "edge-to-prometheus-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.1.9",
+      "host": "10.42.0.9",
+      "port": 10808,
       "metadata": [
-        {
-          "key": "deployment",
-          "value": "prometheus"
-        },
         {
           "key": "statefulset.kubernetes.io/pod-name",
           "value": "prometheus-0"
@@ -20,19 +17,22 @@
           "value": "prometheus-6c5cc9866f"
         },
         {
+          "key": "deployment",
+          "value": "prometheus"
+        },
+        {
           "key": "gm_control_discovery",
           "value": "true"
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.6"
+          "value": "172.24.0.3"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-3"
+          "value": "k3d-greymatter-agent-0"
         }
-      ],
-      "port": 10808
+      ]
     }
   ],
   "lb_policy": "",
@@ -40,19 +40,19 @@
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "checksum": "f1ddd57d5932850a2e5ae1160bf027f6417cdd542f79acfd8fc406bb097a23c9",
-    "ecdh_curves": [
-      "X25519:P-256:P-521:P-384"
-    ],
     "secret_key": "secret-prometheus-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
+    "subject_names": [
+      "spiffe://quickstart.greymatter.io/prometheus"
+    ],
+    "ecdh_curves": [
+      "X25519:P-256:P-521:P-384"
+    ],
     "set_current_client_cert_details": {
       "uri": false
     },
-    "subject_names": [
-      "spiffe://quickstart.greymatter.io/prometheus"
-    ]
+    "checksum": "f1ddd57d5932850a2e5ae1160bf027f6417cdd542f79acfd8fc406bb097a23c9"
   },
   "zone_key": "zone-default-zone"
 }

@@ -13,21 +13,6 @@
       "rules": {
         "action": 0,
         "policies": {
-          "product-viewer": {
-            "permissions": [
-              {
-                "header": {
-                  "exact_match": "GET",
-                  "name": ":method"
-                }
-              }
-            ],
-            "principals": [
-              {
-                "any": true
-              }
-            ]
-          },
           "service-admin": {
             "permissions": [
               {
@@ -37,8 +22,8 @@
             "principals": [
               {
                 "header": {
-                  "exact_match": "CN=quickstart,OU=Engineering,O=Decipher Technology Studios,L=Alexandria,ST=Virginia,C=US",
-                  "name": "user_dn"
+                  "name": "user_dn",
+                  "exact_match": "CN=quickstart,OU=Engineering,O=Decipher Technology Studios,L=Alexandria,ST=Virginia,C=US"
                 }
               }
             ]
@@ -61,19 +46,34 @@
                 }
               }
             ]
+          },
+          "product-viewer": {
+            "permissions": [
+              {
+                "header": {
+                  "name": ":method",
+                  "exact_match": "GET"
+                }
+              }
+            ],
+            "principals": [
+              {
+                "any": true
+              }
+            ]
           }
         }
       }
     },
     "gm_metrics": {
-      "metrics_dashboard_uri_path": "/metrics",
-      "metrics_host": "0.0.0.0",
-      "metrics_key_depth": "3",
-      "metrics_key_function": "depth",
       "metrics_port": 8081,
+      "metrics_host": "0.0.0.0",
+      "metrics_dashboard_uri_path": "/metrics",
       "metrics_prometheus_uri_path": "/prometheus",
       "metrics_ring_buffer_size": 4096,
-      "prometheus_system_metrics_interval_seconds": 15
+      "prometheus_system_metrics_interval_seconds": 15,
+      "metrics_key_function": "depth",
+      "metrics_key_depth": "3"
     }
   },
   "ip": "0.0.0.0",
@@ -83,20 +83,20 @@
   "port": 10808,
   "protocol": "http_auto",
   "secret": {
-    "checksum": "cb981f53e1d87de576c67dc76c2719c525ec90b770e7992f826d93423859c206",
+    "secret_key": "secret-slo-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/slo",
+    "secret_validation_name": "spiffe://quickstart.greymatter.io",
+    "subject_names": [
+      "spiffe://quickstart.greymatter.io/edge"
+    ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
     ],
     "forward_client_cert_details": "APPEND_FORWARD",
-    "secret_key": "secret-slo-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/slo",
-    "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "set_current_client_cert_details": {
       "uri": true
     },
-    "subject_names": [
-      "spiffe://quickstart.greymatter.io/edge"
-    ]
+    "checksum": "cb981f53e1d87de576c67dc76c2719c525ec90b770e7992f826d93423859c206"
   },
   "tracing_config": null,
   "zone_key": "zone-default-zone"

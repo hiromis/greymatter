@@ -2,17 +2,17 @@
   "checksum": "9f031febdb5685e74ecb3abf21b3f37a62150d32e55a83234f0df3e5edd3bd06",
   "cohort_seed": null,
   "default": {
-    "dark": null,
     "light": [
       {
-        "cluster_key": "edge-to-dashboard-cluster",
         "constraint_key": "",
+        "cluster_key": "edge-to-dashboard-cluster",
         "metadata": null,
         "properties": null,
         "response_data": {},
         "weight": 1
       }
     ],
+    "dark": null,
     "tap": null
   },
   "name": "dashboard",

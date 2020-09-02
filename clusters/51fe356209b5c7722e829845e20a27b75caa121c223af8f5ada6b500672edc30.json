@@ -1,17 +1,17 @@
 {
-  "checksum": "4c71686a5fd0fbf20b1ab72744fadaeb2800c2c5d59fa0af12a694874c3fb3d7",
+  "checksum": "51fe356209b5c7722e829845e20a27b75caa121c223af8f5ada6b500672edc30",
   "circuit_breakers": null,
-  "cluster_key": "cluster-prometheus",
-  "health_checks": [],
+  "cluster_key": "cluster-lad",
+  "health_checks": null,
   "instances": [
     {
-      "host": "0.0.0.0",
-      "port": 9090,
+      "host": "localhost",
+      "port": 8080,
       "metadata": null
     }
   ],
   "lb_policy": "",
-  "name": "prometheus-service",
+  "name": "service",
   "outlier_detection": null,
   "secret": {
     "secret_key": "",

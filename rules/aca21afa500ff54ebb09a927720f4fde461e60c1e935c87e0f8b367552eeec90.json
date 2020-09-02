@@ -2,17 +2,17 @@
   "checksum": "aca21afa500ff54ebb09a927720f4fde461e60c1e935c87e0f8b367552eeec90",
   "cohort_seed": null,
   "default": {
-    "dark": null,
     "light": [
       {
-        "cluster_key": "cluster-data-internal",
         "constraint_key": "",
+        "cluster_key": "cluster-data-internal",
         "metadata": null,
         "properties": null,
         "response_data": {},
         "weight": 1
       }
     ],
+    "dark": null,
     "tap": null
   },
   "name": "data-internal",

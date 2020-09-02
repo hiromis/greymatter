@@ -2,17 +2,17 @@
   "checksum": "bbb7d1db16c8cf03ea1d01ffebbfab07b3c239792cc1f9b6bf7c8ddb7541cad9",
   "cohort_seed": null,
   "default": {
-    "dark": null,
     "light": [
       {
-        "cluster_key": "edge-to-jwt-security-cluster",
         "constraint_key": "",
+        "cluster_key": "edge-to-jwt-security-cluster",
         "metadata": null,
         "properties": null,
         "response_data": {},
         "weight": 1
       }
     ],
+    "dark": null,
     "tap": null
   },
   "name": "jwt-security",

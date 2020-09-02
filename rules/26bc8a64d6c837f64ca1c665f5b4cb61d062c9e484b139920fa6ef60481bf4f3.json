@@ -2,17 +2,17 @@
   "checksum": "26bc8a64d6c837f64ca1c665f5b4cb61d062c9e484b139920fa6ef60481bf4f3",
   "cohort_seed": null,
   "default": {
-    "dark": null,
     "light": [
       {
-        "cluster_key": "edge-to-control-api-cluster",
         "constraint_key": "",
+        "cluster_key": "edge-to-control-api-cluster",
         "metadata": null,
         "properties": null,
         "response_data": {},
         "weight": 1
       }
     ],
+    "dark": null,
     "tap": null
   },
   "name": "control-api",

@@ -6,23 +6,23 @@
   "instances": [
     {
       "host": "0.0.0.0",
-      "metadata": null,
-      "port": 3000
+      "port": 3000,
+      "metadata": null
     }
   ],
   "lb_policy": "",
   "name": "jwt-security-service",
   "outlier_detection": null,
   "secret": {
-    "checksum": "",
-    "ecdh_curves": null,
     "secret_key": "",
     "secret_name": "",
     "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
     "set_current_client_cert_details": {
       "uri": false
     },
-    "subject_names": null
+    "checksum": ""
   },
   "zone_key": "zone-default-zone"
 }

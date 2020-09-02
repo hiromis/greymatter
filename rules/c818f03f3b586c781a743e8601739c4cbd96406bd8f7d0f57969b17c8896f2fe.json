@@ -2,17 +2,17 @@
   "checksum": "c818f03f3b586c781a743e8601739c4cbd96406bd8f7d0f57969b17c8896f2fe",
   "cohort_seed": null,
   "default": {
-    "dark": null,
     "light": [
       {
-        "cluster_key": "cluster-edge",
         "constraint_key": "",
+        "cluster_key": "cluster-edge",
         "metadata": null,
         "properties": null,
         "response_data": {},
         "weight": 1
       }
     ],
+    "dark": null,
     "tap": null
   },
   "name": "edge",

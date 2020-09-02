@@ -11,10 +11,10 @@
   "retry_policy": null,
   "route_key": "route-data-internal-internal-jwt",
   "route_match": {
-    "match_type": "",
-    "path": ""
+    "path": "",
+    "match_type": ""
   },
   "rules": null,
-  "shared_rules_key": "",
+  "shared_rules_key": "shared-rules-data-internal-to-internal-jwt",
   "zone_key": "zone-default-zone"
 }

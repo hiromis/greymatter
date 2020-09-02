@@ -11,10 +11,10 @@
   "retry_policy": null,
   "route_key": "edge-internal-jwt-security-route",
   "route_match": {
-    "match_type": "",
-    "path": ""
+    "path": "",
+    "match_type": ""
   },
   "rules": null,
-  "shared_rules_key": "",
+  "shared_rules_key": "edge-internal-jwt-security-shared-rules",
   "zone_key": "zone-default-zone"
 }

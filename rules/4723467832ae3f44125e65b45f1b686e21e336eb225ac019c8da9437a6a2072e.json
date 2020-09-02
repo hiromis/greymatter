@@ -2,17 +2,17 @@
   "checksum": "4723467832ae3f44125e65b45f1b686e21e336eb225ac019c8da9437a6a2072e",
   "cohort_seed": null,
   "default": {
-    "dark": null,
     "light": [
       {
-        "cluster_key": "cluster-slo",
         "constraint_key": "",
+        "cluster_key": "cluster-slo",
         "metadata": null,
         "properties": null,
         "response_data": {},
         "weight": 1
       }
     ],
+    "dark": null,
     "tap": null
   },
   "name": "slo",

@@ -1,0 +1,50 @@
+{
+  "checksum": "e0715f1ba6eb241f43a7e9e59fb35e2678b291dc4fca4be1b3793e56ede741fb",
+  "circuit_breakers": null,
+  "cluster_key": "edge-to-dashboard-cluster",
+  "health_checks": [],
+  "instances": [
+    {
+      "host": "10.42.2.8",
+      "port": 10808,
+      "metadata": [
+        {
+          "key": "pod-template-hash",
+          "value": "7959bc8cb4"
+        },
+        {
+          "key": "gm_control_discovery",
+          "value": "true"
+        },
+        {
+          "key": "gm_k8s_host_ip",
+          "value": "172.24.0.4"
+        },
+        {
+          "key": "gm_k8s_node_name",
+          "value": "k3d-greymatter-agent-1"
+        }
+      ]
+    }
+  ],
+  "lb_policy": "",
+  "name": "dashboard",
+  "outlier_detection": null,
+  "require_tls": true,
+  "secret": {
+    "secret_key": "secret-dashboard-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/edge",
+    "secret_validation_name": "spiffe://quickstart.greymatter.io",
+    "subject_names": [
+      "spiffe://quickstart.greymatter.io/dashboard"
+    ],
+    "ecdh_curves": [
+      "X25519:P-256:P-521:P-384"
+    ],
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "checksum": "cdc4c1da9d14f68186fda8e7f9fbaadc9354d2de6c83fab10ad672d51770a102"
+  },
+  "zone_key": "zone-default-zone"
+}
