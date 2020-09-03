@@ -1,20 +1,20 @@
 {
-  "checksum": "c6a8b80f3da2ee3d9a8ddae61e9643fc65446fb0e1083b733bf45619cd9a18ae",
+  "checksum": "6ac93e43c35d9c9da0846371576b1522014b1f5f872d35864269244bf54e1fa0",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-slo-cluster",
+  "cluster_key": "edge-to-jwt-security-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.4.7",
+      "host": "10.42.4.4",
       "port": 10808,
       "metadata": [
         {
           "key": "deployment",
-          "value": "slo"
+          "value": "jwt-security"
         },
         {
           "key": "pod-template-hash",
-          "value": "6d6cbc9cbf"
+          "value": "55c4c8df4"
         },
         {
           "key": "gm_control_discovery",
@@ -22,25 +22,25 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.6"
+          "value": "172.24.0.3"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-3"
+          "value": "k3d-greymatter-agent-0"
         }
       ]
     }
   ],
   "lb_policy": "",
-  "name": "slo",
+  "name": "jwt-security",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "secret_key": "secret-slo-secret",
+    "secret_key": "secret-jwt-security-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/slo"
+      "spiffe://quickstart.greymatter.io/jwt-security"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -48,7 +48,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "755e1b5e93a7d6518e24ab738884ecb0a4f1d6d2d2c86aad34eeaf2a8e0c9535"
+    "checksum": "5695bd579654e26d13635813e9571774116b5dd854eba2eaeea50b3cfd3279c3"
   },
   "zone_key": "zone-default-zone"
 }

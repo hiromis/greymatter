@@ -1,20 +1,24 @@
 {
-  "checksum": "13ce3c68370a3dafecfc5f9a6ecd886dcf385ee059f3afe963735278b88dad7d",
+  "checksum": "62caa42781997a6329d2bffbd97c3a334444694814addad7d2b6e2c66e6a0f65",
   "circuit_breakers": null,
-  "cluster_key": "data-internal-to-internal-jwt-cluster",
+  "cluster_key": "edge-to-control-api-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.0.4",
+      "host": "10.42.3.6",
       "port": 10808,
       "metadata": [
         {
-          "key": "pod-template-hash",
-          "value": "59c957797d"
+          "key": "statefulset.kubernetes.io/pod-name",
+          "value": "control-api-0"
+        },
+        {
+          "key": "controller-revision-hash",
+          "value": "control-api-548f8494bb"
         },
         {
           "key": "deployment",
-          "value": "internal-jwt-security"
+          "value": "control-api"
         },
         {
           "key": "gm_control_discovery",
@@ -22,25 +26,25 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.3"
+          "value": "172.24.0.2"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-0"
+          "value": "k3d-greymatter-server-0"
         }
       ]
     }
   ],
   "lb_policy": "",
-  "name": "internal-jwt-security",
+  "name": "control-api",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "secret_key": "secret-internal-jwt-security-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/data-internal",
+    "secret_key": "secret-control-api-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/internal-jwt-security"
+      "spiffe://quickstart.greymatter.io/control-api"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -48,7 +52,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "e2d98cd20a9a4ee8818590dc173898f8eebfe0e81b07a5dcfec7b04c62fa4afd"
+    "checksum": "9761c25dc055e78feb1fd313e0c9911d18507c287807b7121eb6a9d14ef2b6c6"
   },
   "zone_key": "zone-default-zone"
 }

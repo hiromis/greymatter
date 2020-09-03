@@ -1,20 +1,20 @@
 {
-  "checksum": "d543bf0f6c473335e4f51175581207f0133f18e51144734eb96239bbd358b3ba",
+  "checksum": "4f727238344751ce37a35ef525b8928aab132d31560d0935244d26b3a8537b29",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-jwt-security-cluster",
+  "cluster_key": "edge-to-data-internal-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.4.5",
+      "host": "10.42.2.12",
       "port": 10808,
       "metadata": [
         {
-          "key": "deployment",
-          "value": "jwt-security"
+          "key": "controller-revision-hash",
+          "value": "data-internal-7cdfccd584"
         },
         {
-          "key": "pod-template-hash",
-          "value": "55c4c8df4"
+          "key": "statefulset.kubernetes.io/pod-name",
+          "value": "data-internal-0"
         },
         {
           "key": "gm_control_discovery",
@@ -32,15 +32,15 @@
     }
   ],
   "lb_policy": "",
-  "name": "jwt-security",
+  "name": "data-internal",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "secret_key": "secret-jwt-security-secret",
+    "secret_key": "secret-data-internal-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/jwt-security"
+      "spiffe://quickstart.greymatter.io/data-internal"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -48,7 +48,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "5695bd579654e26d13635813e9571774116b5dd854eba2eaeea50b3cfd3279c3"
+    "checksum": "5fddbfea0d138a710c9eac185f91b606dc70ceb0a47eaba9c3262153b69ffa6a"
   },
   "zone_key": "zone-default-zone"
 }

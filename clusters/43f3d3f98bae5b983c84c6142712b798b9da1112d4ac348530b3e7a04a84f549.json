@@ -1,24 +1,24 @@
 {
-  "checksum": "0e599a659b076ee4ed60c9d1125f1435e314b59cd3142c6f95a106c9d1a9ee26",
+  "checksum": "43f3d3f98bae5b983c84c6142712b798b9da1112d4ac348530b3e7a04a84f549",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-control-api-cluster",
+  "cluster_key": "edge-to-prometheus-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.3.8",
+      "host": "10.42.1.9",
       "port": 10808,
       "metadata": [
         {
+          "key": "deployment",
+          "value": "prometheus"
+        },
+        {
           "key": "statefulset.kubernetes.io/pod-name",
-          "value": "control-api-0"
+          "value": "prometheus-0"
         },
         {
           "key": "controller-revision-hash",
-          "value": "control-api-548f8494bb"
-        },
-        {
-          "key": "deployment",
-          "value": "control-api"
+          "value": "prometheus-6c5cc9866f"
         },
         {
           "key": "gm_control_discovery",
@@ -36,15 +36,15 @@
     }
   ],
   "lb_policy": "",
-  "name": "control-api",
+  "name": "prometheus",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "secret_key": "secret-control-api-secret",
+    "secret_key": "secret-prometheus-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/control-api"
+      "spiffe://quickstart.greymatter.io/prometheus"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -52,7 +52,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "9761c25dc055e78feb1fd313e0c9911d18507c287807b7121eb6a9d14ef2b6c6"
+    "checksum": "f1ddd57d5932850a2e5ae1160bf027f6417cdd542f79acfd8fc406bb097a23c9"
   },
   "zone_key": "zone-default-zone"
 }
