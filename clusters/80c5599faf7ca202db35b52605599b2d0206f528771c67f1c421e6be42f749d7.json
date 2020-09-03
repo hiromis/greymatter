@@ -1,20 +1,20 @@
 {
-  "checksum": "2a27e9d8cac946d5c201f657b2100aee82c4bff2cead4b19e8450d0bffae70ac",
+  "checksum": "80c5599faf7ca202db35b52605599b2d0206f528771c67f1c421e6be42f749d7",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-catalog-cluster",
+  "cluster_key": "edge-to-slo-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.3.7",
+      "host": "10.42.2.8",
       "port": 10808,
       "metadata": [
         {
           "key": "deployment",
-          "value": "catalog"
+          "value": "slo"
         },
         {
           "key": "pod-template-hash",
-          "value": "6b88965bfb"
+          "value": "6d6cbc9cbf"
         },
         {
           "key": "gm_control_discovery",
@@ -22,25 +22,25 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.5"
+          "value": "172.24.0.2"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-2"
+          "value": "k3d-greymatter-server-0"
         }
       ]
     }
   ],
   "lb_policy": "",
-  "name": "catalog",
+  "name": "slo",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "secret_key": "secret-catalog-secret",
+    "secret_key": "secret-slo-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/catalog"
+      "spiffe://quickstart.greymatter.io/slo"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -48,7 +48,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "157df0d73942b091b0052b1897a6f556813e9b0523709b6dfd2ec0b6b67cfd54"
+    "checksum": "755e1b5e93a7d6518e24ab738884ecb0a4f1d6d2d2c86aad34eeaf2a8e0c9535"
   },
   "zone_key": "zone-default-zone"
 }

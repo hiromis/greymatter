@@ -1,20 +1,20 @@
 {
-  "checksum": "a1fea48e3991c694f8ff33d630fbfa695d6e064c24dd9834d77f772c57febc02",
+  "checksum": "36906ca53c025684dbb0bdaa5262790b8c2cb3534a8312e65e385d32a7446108",
   "circuit_breakers": null,
   "cluster_key": "catalog-to-data-internal-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.4.7",
+      "host": "10.42.4.8",
       "port": 10808,
       "metadata": [
         {
-          "key": "controller-revision-hash",
-          "value": "data-internal-7cdfccd584"
-        },
-        {
           "key": "statefulset.kubernetes.io/pod-name",
           "value": "data-internal-0"
+        },
+        {
+          "key": "controller-revision-hash",
+          "value": "data-internal-7cdfccd584"
         },
         {
           "key": "gm_control_discovery",
@@ -22,11 +22,11 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.6"
+          "value": "172.24.0.3"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-3"
+          "value": "k3d-greymatter-agent-0"
         }
       ]
     }

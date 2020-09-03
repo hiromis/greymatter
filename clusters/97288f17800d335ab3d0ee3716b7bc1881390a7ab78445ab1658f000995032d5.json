@@ -1,20 +1,24 @@
 {
-  "checksum": "458c7f222cd0f9c9e7b3e8f1dc367855966495ae8b95d68bf279da47c323fd6a",
+  "checksum": "97288f17800d335ab3d0ee3716b7bc1881390a7ab78445ab1658f000995032d5",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-jwt-security-cluster",
+  "cluster_key": "edge-to-control-api-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.1.4",
+      "host": "10.42.2.6",
       "port": 10808,
       "metadata": [
         {
-          "key": "pod-template-hash",
-          "value": "55c4c8df4"
+          "key": "controller-revision-hash",
+          "value": "control-api-548f8494bb"
         },
         {
           "key": "deployment",
-          "value": "jwt-security"
+          "value": "control-api"
+        },
+        {
+          "key": "statefulset.kubernetes.io/pod-name",
+          "value": "control-api-0"
         },
         {
           "key": "gm_control_discovery",
@@ -22,25 +26,25 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.4"
+          "value": "172.24.0.2"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-1"
+          "value": "k3d-greymatter-server-0"
         }
       ]
     }
   ],
   "lb_policy": "",
-  "name": "jwt-security",
+  "name": "control-api",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "secret_key": "secret-jwt-security-secret",
+    "secret_key": "secret-control-api-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/jwt-security"
+      "spiffe://quickstart.greymatter.io/control-api"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -48,7 +52,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "5695bd579654e26d13635813e9571774116b5dd854eba2eaeea50b3cfd3279c3"
+    "checksum": "9761c25dc055e78feb1fd313e0c9911d18507c287807b7121eb6a9d14ef2b6c6"
   },
   "zone_key": "zone-default-zone"
 }

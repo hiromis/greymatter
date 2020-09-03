@@ -1,11 +1,11 @@
 {
-  "checksum": "5344700f19ca17c4474a021f1ae4f25df73d9528e5adc0b211e6e14c6daebf10",
+  "checksum": "ee15c31dc30caed92037df21ae6efef2bf6b75c50c0d5f55147e3e61a935bfe7",
   "circuit_breakers": null,
   "cluster_key": "cluster-edge",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.1.5",
+      "host": "10.42.3.5",
       "port": 10808,
       "metadata": [
         {
@@ -22,11 +22,11 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.4"
+          "value": "172.24.0.6"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-1"
+          "value": "k3d-greymatter-agent-3"
         }
       ]
     }
