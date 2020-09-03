@@ -1,20 +1,20 @@
 {
-  "checksum": "36906ca53c025684dbb0bdaa5262790b8c2cb3534a8312e65e385d32a7446108",
+  "checksum": "e4f57bd65191ab58db2e4a6a03fa3853be8a59963f3bcad3a5216d01c7179ccc",
   "circuit_breakers": null,
-  "cluster_key": "catalog-to-data-internal-cluster",
+  "cluster_key": "edge-to-catalog-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.4.8",
+      "host": "10.42.4.6",
       "port": 10808,
       "metadata": [
         {
-          "key": "statefulset.kubernetes.io/pod-name",
-          "value": "data-internal-0"
+          "key": "deployment",
+          "value": "catalog"
         },
         {
-          "key": "controller-revision-hash",
-          "value": "data-internal-7cdfccd584"
+          "key": "pod-template-hash",
+          "value": "6b88965bfb"
         },
         {
           "key": "gm_control_discovery",
@@ -32,15 +32,15 @@
     }
   ],
   "lb_policy": "",
-  "name": "data-internal",
+  "name": "catalog",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "secret_key": "secret-data-internal-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/catalog",
+    "secret_key": "secret-catalog-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/data-internal"
+      "spiffe://quickstart.greymatter.io/catalog"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -48,7 +48,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "735e9428352ddd2600ec5fc3ec26137e7dc4731c6e1f2037f8d2451505da26b4"
+    "checksum": "157df0d73942b091b0052b1897a6f556813e9b0523709b6dfd2ec0b6b67cfd54"
   },
   "zone_key": "zone-default-zone"
 }
