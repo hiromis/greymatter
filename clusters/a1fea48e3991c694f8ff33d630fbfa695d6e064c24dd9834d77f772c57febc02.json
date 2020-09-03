@@ -1,20 +1,20 @@
 {
-  "checksum": "6ac93e43c35d9c9da0846371576b1522014b1f5f872d35864269244bf54e1fa0",
+  "checksum": "a1fea48e3991c694f8ff33d630fbfa695d6e064c24dd9834d77f772c57febc02",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-jwt-security-cluster",
+  "cluster_key": "catalog-to-data-internal-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.4.4",
+      "host": "10.42.4.7",
       "port": 10808,
       "metadata": [
         {
-          "key": "deployment",
-          "value": "jwt-security"
+          "key": "controller-revision-hash",
+          "value": "data-internal-7cdfccd584"
         },
         {
-          "key": "pod-template-hash",
-          "value": "55c4c8df4"
+          "key": "statefulset.kubernetes.io/pod-name",
+          "value": "data-internal-0"
         },
         {
           "key": "gm_control_discovery",
@@ -22,25 +22,25 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.3"
+          "value": "172.24.0.6"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-0"
+          "value": "k3d-greymatter-agent-3"
         }
       ]
     }
   ],
   "lb_policy": "",
-  "name": "jwt-security",
+  "name": "data-internal",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "secret_key": "secret-jwt-security-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/edge",
+    "secret_key": "secret-data-internal-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/catalog",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/jwt-security"
+      "spiffe://quickstart.greymatter.io/data-internal"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -48,7 +48,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "5695bd579654e26d13635813e9571774116b5dd854eba2eaeea50b3cfd3279c3"
+    "checksum": "735e9428352ddd2600ec5fc3ec26137e7dc4731c6e1f2037f8d2451505da26b4"
   },
   "zone_key": "zone-default-zone"
 }

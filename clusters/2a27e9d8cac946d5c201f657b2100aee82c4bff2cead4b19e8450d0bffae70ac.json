@@ -1,20 +1,20 @@
 {
-  "checksum": "68be38a240a90639d3ae7398f78b4ffd298ff787b88bcfb50f68801e659270cc",
+  "checksum": "2a27e9d8cac946d5c201f657b2100aee82c4bff2cead4b19e8450d0bffae70ac",
   "circuit_breakers": null,
-  "cluster_key": "cluster-edge",
+  "cluster_key": "edge-to-catalog-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.1.5",
+      "host": "10.42.3.7",
       "port": 10808,
       "metadata": [
         {
           "key": "deployment",
-          "value": "edge"
+          "value": "catalog"
         },
         {
           "key": "pod-template-hash",
-          "value": "6fd99cbb84"
+          "value": "6b88965bfb"
         },
         {
           "key": "gm_control_discovery",
@@ -32,18 +32,23 @@
     }
   ],
   "lb_policy": "",
-  "name": "edge",
+  "name": "catalog",
   "outlier_detection": null,
+  "require_tls": true,
   "secret": {
-    "secret_key": "",
-    "secret_name": "",
-    "secret_validation_name": "",
-    "subject_names": null,
-    "ecdh_curves": null,
+    "secret_key": "secret-catalog-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/edge",
+    "secret_validation_name": "spiffe://quickstart.greymatter.io",
+    "subject_names": [
+      "spiffe://quickstart.greymatter.io/catalog"
+    ],
+    "ecdh_curves": [
+      "X25519:P-256:P-521:P-384"
+    ],
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": ""
+    "checksum": "157df0d73942b091b0052b1897a6f556813e9b0523709b6dfd2ec0b6b67cfd54"
   },
   "zone_key": "zone-default-zone"
 }

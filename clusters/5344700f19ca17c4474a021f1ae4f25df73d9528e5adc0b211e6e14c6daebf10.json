@@ -1,0 +1,49 @@
+{
+  "checksum": "5344700f19ca17c4474a021f1ae4f25df73d9528e5adc0b211e6e14c6daebf10",
+  "circuit_breakers": null,
+  "cluster_key": "cluster-edge",
+  "health_checks": [],
+  "instances": [
+    {
+      "host": "10.42.1.5",
+      "port": 10808,
+      "metadata": [
+        {
+          "key": "pod-template-hash",
+          "value": "6fd99cbb84"
+        },
+        {
+          "key": "deployment",
+          "value": "edge"
+        },
+        {
+          "key": "gm_control_discovery",
+          "value": "true"
+        },
+        {
+          "key": "gm_k8s_host_ip",
+          "value": "172.24.0.4"
+        },
+        {
+          "key": "gm_k8s_node_name",
+          "value": "k3d-greymatter-agent-1"
+        }
+      ]
+    }
+  ],
+  "lb_policy": "",
+  "name": "edge",
+  "outlier_detection": null,
+  "secret": {
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "checksum": ""
+  },
+  "zone_key": "zone-default-zone"
+}

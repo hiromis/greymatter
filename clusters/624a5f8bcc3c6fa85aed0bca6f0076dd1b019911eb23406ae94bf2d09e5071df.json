@@ -1,11 +1,11 @@
 {
-  "checksum": "4f727238344751ce37a35ef525b8928aab132d31560d0935244d26b3a8537b29",
+  "checksum": "624a5f8bcc3c6fa85aed0bca6f0076dd1b019911eb23406ae94bf2d09e5071df",
   "circuit_breakers": null,
   "cluster_key": "edge-to-data-internal-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.2.12",
+      "host": "10.42.4.7",
       "port": 10808,
       "metadata": [
         {
