@@ -4,9 +4,9 @@
     "envoy.rbac"
   ],
   "active_network_filters": null,
-  "checksum": "d59c8070846afecd9dd55eb33245c8c076e2868b10f5c7cd7002b8f5482a9fdb",
+  "checksum": "840e228b8697412a80b501c6c2d6f1f1ba22ddd233c6e78cf8cb167b45ab4ba6",
   "domain_keys": [
-    "domain-catalog"
+    "domain-prometheus"
   ],
   "http_filters": {
     "envoy_rbac": {
@@ -77,14 +77,14 @@
     }
   },
   "ip": "0.0.0.0",
-  "listener_key": "listener-catalog",
-  "name": "catalog",
+  "listener_key": "listener-prometheus",
+  "name": "prometheus",
   "network_filters": null,
   "port": 10808,
   "protocol": "http_auto",
   "secret": {
-    "secret_key": "secret-catalog-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/catalog",
+    "secret_key": "secret-prometheus-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/prometheus",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
       "spiffe://quickstart.greymatter.io/edge"
@@ -96,7 +96,7 @@
     "set_current_client_cert_details": {
       "uri": true
     },
-    "checksum": "c433113318c0d0fe155a5c61c26003c6653f08cf96bdc9a109dace25f44bebd7"
+    "checksum": "f64c42aef8665bf0bab272731d178d3a20f2f974c3d748d7dbf8acac82762395"
   },
   "tracing_config": null,
   "zone_key": "zone-default-zone"
