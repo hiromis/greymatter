@@ -1,0 +1,31 @@
+{
+  "checksum": "a4596e9bd8ccd618a11d057a7f928a2bb0164ccdf44a11bcfdfe1c94dfa0fa97",
+  "cohort_seed": null,
+  "domain_key": "edge",
+  "filter_metadata": {
+    "gm.metrics": [
+      {
+        "key": "metrics_key_function",
+        "value": "depth"
+      },
+      {
+        "key": "metrics_key_depth",
+        "value": "1"
+      }
+    ]
+  },
+  "high_priority": false,
+  "path": "/",
+  "prefix_rewrite": "",
+  "redirects": null,
+  "response_data": {},
+  "retry_policy": null,
+  "route_key": "edge-dashboard-route-no-slash",
+  "route_match": {
+    "path": "",
+    "match_type": ""
+  },
+  "rules": null,
+  "shared_rules_key": "edge-dashboard-shared-rules",
+  "zone_key": "zone-default-zone"
+}

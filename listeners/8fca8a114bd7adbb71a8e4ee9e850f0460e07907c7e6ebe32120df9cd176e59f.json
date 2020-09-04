@@ -1,0 +1,31 @@
+{
+  "active_http_filters": [],
+  "active_network_filters": null,
+  "checksum": "8fca8a114bd7adbb71a8e4ee9e850f0460e07907c7e6ebe32120df9cd176e59f",
+  "domain_keys": [
+    "domain-control-api",
+    "domain-control-api-egress"
+  ],
+  "http_filters": {
+    "gm_inheaders": {}
+  },
+  "ip": "127.0.0.1",
+  "listener_key": "listener-control-api-egress",
+  "name": "control-api",
+  "network_filters": null,
+  "port": 10909,
+  "protocol": "http_auto",
+  "secret": {
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "checksum": ""
+  },
+  "tracing_config": null,
+  "zone_key": "zone-default-zone"
+}

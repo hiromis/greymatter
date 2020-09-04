@@ -1,0 +1,25 @@
+{
+  "checksum": "c818f03f3b586c781a743e8601739c4cbd96406bd8f7d0f57969b17c8896f2fe",
+  "cohort_seed": null,
+  "default": {
+    "light": [
+      {
+        "constraint_key": "",
+        "cluster_key": "cluster-edge",
+        "metadata": null,
+        "properties": null,
+        "response_data": {},
+        "weight": 1
+      }
+    ],
+    "dark": null,
+    "tap": null
+  },
+  "name": "edge",
+  "properties": null,
+  "response_data": {},
+  "retry_policy": null,
+  "rules": null,
+  "shared_rules_key": "shared-rules-edge",
+  "zone_key": "zone-default-zone"
+}

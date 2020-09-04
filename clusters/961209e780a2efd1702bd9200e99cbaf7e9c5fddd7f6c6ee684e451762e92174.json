@@ -1,0 +1,28 @@
+{
+  "checksum": "961209e780a2efd1702bd9200e99cbaf7e9c5fddd7f6c6ee684e451762e92174",
+  "circuit_breakers": null,
+  "cluster_key": "cluster-data-internal",
+  "health_checks": [],
+  "instances": [
+    {
+      "host": "0.0.0.0",
+      "port": 8181,
+      "metadata": null
+    }
+  ],
+  "lb_policy": "",
+  "name": "data-internal-service",
+  "outlier_detection": null,
+  "secret": {
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "checksum": ""
+  },
+  "zone_key": "zone-default-zone"
+}

@@ -1,0 +1,20 @@
+{
+  "checksum": "2d4fc3ecb0527b6177fe5c85cd9af8a5ff47836cf211bb343a0ad61581760e66",
+  "cohort_seed": null,
+  "domain_key": "edge",
+  "filter_metadata": null,
+  "high_priority": false,
+  "path": "/services/prometheus/latest/",
+  "prefix_rewrite": "/",
+  "redirects": null,
+  "response_data": {},
+  "retry_policy": null,
+  "route_key": "edge-prometheus-route",
+  "route_match": {
+    "path": "",
+    "match_type": ""
+  },
+  "rules": null,
+  "shared_rules_key": "edge-prometheus-shared-rules",
+  "zone_key": "zone-default-zone"
+}

@@ -1,0 +1,25 @@
+{
+  "checksum": "5524aee5b1e7df2d7a6d066520c08b11914517bd83638eb5110240b0759ea87d",
+  "cohort_seed": null,
+  "default": {
+    "light": [
+      {
+        "constraint_key": "",
+        "cluster_key": "edge-to-internal-jwt-security-cluster",
+        "metadata": null,
+        "properties": null,
+        "response_data": {},
+        "weight": 1
+      }
+    ],
+    "dark": null,
+    "tap": null
+  },
+  "name": "internal-jwt-security",
+  "properties": null,
+  "response_data": {},
+  "retry_policy": null,
+  "rules": null,
+  "shared_rules_key": "edge-internal-jwt-security-shared-rules",
+  "zone_key": "zone-default-zone"
+}

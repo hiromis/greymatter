@@ -1,0 +1,18 @@
+{
+  "aliases": null,
+  "checksum": "64492d826a9c4c2f7166d4047d5e5cdaddf9da724d778ac6b57bdbc819230a64",
+  "cors_config": null,
+  "custom_headers": [
+    {
+      "key": "x-forwarded-proto",
+      "value": "https"
+    }
+  ],
+  "domain_key": "domain-dashboard-egress",
+  "force_https": false,
+  "gzip_enabled": false,
+  "name": "*",
+  "port": 10909,
+  "redirects": null,
+  "zone_key": "zone-default-zone"
+}

@@ -1,0 +1,20 @@
+{
+  "checksum": "020bed5d15ef06ead924ceb41692ed0c04979cf4035a70f3896bec4dd33b9a84",
+  "cohort_seed": null,
+  "domain_key": "edge",
+  "filter_metadata": null,
+  "high_priority": false,
+  "path": "/services/dashboard/latest/",
+  "prefix_rewrite": "/",
+  "redirects": null,
+  "response_data": {},
+  "retry_policy": null,
+  "route_key": "edge-dashboard-route",
+  "route_match": {
+    "path": "",
+    "match_type": ""
+  },
+  "rules": null,
+  "shared_rules_key": "edge-dashboard-shared-rules",
+  "zone_key": "zone-default-zone"
+}

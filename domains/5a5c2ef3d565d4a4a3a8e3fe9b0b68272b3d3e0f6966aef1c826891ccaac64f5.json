@@ -1,0 +1,18 @@
+{
+  "aliases": null,
+  "checksum": "5a5c2ef3d565d4a4a3a8e3fe9b0b68272b3d3e0f6966aef1c826891ccaac64f5",
+  "cors_config": null,
+  "custom_headers": [
+    {
+      "key": "x-forwarded-proto",
+      "value": "https"
+    }
+  ],
+  "domain_key": "domain-jwt-security-egress",
+  "force_https": false,
+  "gzip_enabled": false,
+  "name": "*",
+  "port": 10909,
+  "redirects": null,
+  "zone_key": "zone-default-zone"
+}

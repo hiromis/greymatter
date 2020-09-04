@@ -1,0 +1,31 @@
+{
+  "active_http_filters": [],
+  "active_network_filters": null,
+  "checksum": "9258e6814a7fd4011611ac1e6beca715b7758e031ac15e416724e90fdf2816dc",
+  "domain_keys": [
+    "domain-data-internal",
+    "domain-data-internal-egress"
+  ],
+  "http_filters": {
+    "gm_inheaders": {}
+  },
+  "ip": "127.0.0.1",
+  "listener_key": "listener-data-internal-egress",
+  "name": "data-internal",
+  "network_filters": null,
+  "port": 10909,
+  "protocol": "http_auto",
+  "secret": {
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "checksum": ""
+  },
+  "tracing_config": null,
+  "zone_key": "zone-default-zone"
+}

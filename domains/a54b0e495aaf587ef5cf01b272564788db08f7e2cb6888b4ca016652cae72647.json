@@ -1,0 +1,18 @@
+{
+  "aliases": null,
+  "checksum": "a54b0e495aaf587ef5cf01b272564788db08f7e2cb6888b4ca016652cae72647",
+  "cors_config": null,
+  "custom_headers": [
+    {
+      "key": "x-forwarded-proto",
+      "value": "https"
+    }
+  ],
+  "domain_key": "domain-slo-egress",
+  "force_https": false,
+  "gzip_enabled": false,
+  "name": "*",
+  "port": 10909,
+  "redirects": null,
+  "zone_key": "zone-default-zone"
+}

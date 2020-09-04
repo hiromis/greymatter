@@ -1,0 +1,28 @@
+{
+  "checksum": "8782c0c1b47e80e1c169df626873530e418934d134b16864d5215a85cfeff4eb",
+  "circuit_breakers": null,
+  "cluster_key": "cluster-jwt-security",
+  "health_checks": [],
+  "instances": [
+    {
+      "host": "0.0.0.0",
+      "port": 3000,
+      "metadata": null
+    }
+  ],
+  "lb_policy": "",
+  "name": "jwt-security-service",
+  "outlier_detection": null,
+  "secret": {
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "checksum": ""
+  },
+  "zone_key": "zone-default-zone"
+}

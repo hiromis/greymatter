@@ -1,0 +1,13 @@
+{
+  "aliases": null,
+  "checksum": "5c55b1783333a063566fbaec1cb4176d3fc85c9e5196e52009c6765b49728a94",
+  "cors_config": null,
+  "custom_headers": null,
+  "domain_key": "domain-slo",
+  "force_https": true,
+  "gzip_enabled": false,
+  "name": "*",
+  "port": 10808,
+  "redirects": null,
+  "zone_key": "zone-default-zone"
+}
