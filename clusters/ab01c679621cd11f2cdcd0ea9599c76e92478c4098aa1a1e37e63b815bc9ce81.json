@@ -1,20 +1,20 @@
 {
-  "checksum": "d034a4b202a003663926cd9432f6efa8e03ee6e963f4a94db6f6effe7a6a6c9e",
+  "checksum": "ab01c679621cd11f2cdcd0ea9599c76e92478c4098aa1a1e37e63b815bc9ce81",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-data-internal-cluster",
+  "cluster_key": "edge-to-jwt-security-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.1.8",
+      "host": "10.42.4.5",
       "port": 10808,
       "metadata": [
         {
-          "key": "controller-revision-hash",
-          "value": "data-internal-7cdfccd584"
+          "key": "deployment",
+          "value": "jwt-security"
         },
         {
-          "key": "statefulset.kubernetes.io/pod-name",
-          "value": "data-internal-0"
+          "key": "pod-template-hash",
+          "value": "55c4c8df4"
         },
         {
           "key": "gm_control_discovery",
@@ -22,25 +22,25 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.5"
+          "value": "172.24.0.3"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-2"
+          "value": "k3d-greymatter-agent-0"
         }
       ]
     }
   ],
   "lb_policy": "",
-  "name": "data-internal",
+  "name": "jwt-security",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "secret_key": "secret-data-internal-secret",
+    "secret_key": "secret-jwt-security-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/data-internal"
+      "spiffe://quickstart.greymatter.io/jwt-security"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -48,7 +48,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "5fddbfea0d138a710c9eac185f91b606dc70ceb0a47eaba9c3262153b69ffa6a"
+    "checksum": "5695bd579654e26d13635813e9571774116b5dd854eba2eaeea50b3cfd3279c3"
   },
   "zone_key": "zone-default-zone"
 }

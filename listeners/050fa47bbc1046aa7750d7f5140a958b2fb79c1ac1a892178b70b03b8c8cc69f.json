@@ -4,9 +4,9 @@
     "envoy.rbac"
   ],
   "active_network_filters": null,
-  "checksum": "bbd8e7f777cdd20334b127b0251b57fedab520b0f7498c31f062d95f233af943",
+  "checksum": "050fa47bbc1046aa7750d7f5140a958b2fb79c1ac1a892178b70b03b8c8cc69f",
   "domain_keys": [
-    "domain-slo"
+    "domain-control-api"
   ],
   "http_filters": {
     "envoy_rbac": {
@@ -77,14 +77,14 @@
     }
   },
   "ip": "0.0.0.0",
-  "listener_key": "listener-slo",
-  "name": "slo",
+  "listener_key": "listener-control-api",
+  "name": "control-api",
   "network_filters": null,
   "port": 10808,
   "protocol": "http_auto",
   "secret": {
-    "secret_key": "secret-slo-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/slo",
+    "secret_key": "secret-control-api-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/control-api",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
       "spiffe://quickstart.greymatter.io/edge"
@@ -96,7 +96,7 @@
     "set_current_client_cert_details": {
       "uri": true
     },
-    "checksum": "cb981f53e1d87de576c67dc76c2719c525ec90b770e7992f826d93423859c206"
+    "checksum": "94ac2b4b73d7e633eee9594c515570b0f24d09bd4f39ea8d903dea8e339af8af"
   },
   "tracing_config": null,
   "zone_key": "zone-default-zone"

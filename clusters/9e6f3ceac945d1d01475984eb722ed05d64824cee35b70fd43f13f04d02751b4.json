@@ -1,11 +1,11 @@
 {
-  "checksum": "2519238e92d3233a7e6d0284a7caa4c21a72f870c16d39242d7d258bdd3d8bdf",
+  "checksum": "9e6f3ceac945d1d01475984eb722ed05d64824cee35b70fd43f13f04d02751b4",
   "circuit_breakers": null,
-  "cluster_key": "data-internal-to-internal-jwt-cluster",
+  "cluster_key": "edge-to-internal-jwt-security-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.3.5",
+      "host": "10.42.1.4",
       "port": 10808,
       "metadata": [
         {
@@ -37,7 +37,7 @@
   "require_tls": true,
   "secret": {
     "secret_key": "secret-internal-jwt-security-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/data-internal",
+    "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
       "spiffe://quickstart.greymatter.io/internal-jwt-security"
@@ -48,7 +48,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "e2d98cd20a9a4ee8818590dc173898f8eebfe0e81b07a5dcfec7b04c62fa4afd"
+    "checksum": "9fbcd80d33235a2204faefe6e96ebe03ab0efaf27a6a4b67ddcb032003477915"
   },
   "zone_key": "zone-default-zone"
 }

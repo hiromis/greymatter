@@ -4,9 +4,9 @@
     "envoy.rbac"
   ],
   "active_network_filters": null,
-  "checksum": "c494c31860f9518c201d021c99d3e6018dcc91cd728447145208dc0fce49526f",
+  "checksum": "d59c8070846afecd9dd55eb33245c8c076e2868b10f5c7cd7002b8f5482a9fdb",
   "domain_keys": [
-    "domain-jwt-security"
+    "domain-catalog"
   ],
   "http_filters": {
     "envoy_rbac": {
@@ -77,14 +77,14 @@
     }
   },
   "ip": "0.0.0.0",
-  "listener_key": "listener-jwt-security",
-  "name": "jwt-security",
+  "listener_key": "listener-catalog",
+  "name": "catalog",
   "network_filters": null,
   "port": 10808,
   "protocol": "http_auto",
   "secret": {
-    "secret_key": "secret-jwt-security-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/jwt-security",
+    "secret_key": "secret-catalog-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/catalog",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
       "spiffe://quickstart.greymatter.io/edge"
@@ -96,7 +96,7 @@
     "set_current_client_cert_details": {
       "uri": true
     },
-    "checksum": "beebf349f27d0038e667849006e84ab6e396ee143d049b0bb6fca2769fde40f3"
+    "checksum": "c433113318c0d0fe155a5c61c26003c6653f08cf96bdc9a109dace25f44bebd7"
   },
   "tracing_config": null,
   "zone_key": "zone-default-zone"
