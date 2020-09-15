@@ -1,24 +1,20 @@
 {
-  "checksum": "8e81b5f3b73de899e86c0af8e1da9ad64fb72acf611553a6a1b17da1995b2eaf",
+  "checksum": "155ab5adf1a292cdd6543887e52e97efef1c65add195224abf52059ed9dc65a1",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-prometheus-cluster",
+  "cluster_key": "data-internal-to-internal-jwt-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.4.10",
+      "host": "10.42.0.4",
       "port": 10808,
       "metadata": [
         {
-          "key": "statefulset.kubernetes.io/pod-name",
-          "value": "prometheus-0"
-        },
-        {
-          "key": "controller-revision-hash",
-          "value": "prometheus-6c5cc9866f"
-        },
-        {
           "key": "deployment",
-          "value": "prometheus"
+          "value": "internal-jwt-security"
+        },
+        {
+          "key": "pod-template-hash",
+          "value": "59c957797d"
         },
         {
           "key": "gm_control_discovery",
@@ -36,15 +32,15 @@
     }
   ],
   "lb_policy": "",
-  "name": "prometheus",
+  "name": "internal-jwt-security",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "secret_key": "secret-prometheus-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/edge",
+    "secret_key": "secret-internal-jwt-security-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/data-internal",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/prometheus"
+      "spiffe://quickstart.greymatter.io/internal-jwt-security"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -52,7 +48,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "f1ddd57d5932850a2e5ae1160bf027f6417cdd542f79acfd8fc406bb097a23c9"
+    "checksum": "e2d98cd20a9a4ee8818590dc173898f8eebfe0e81b07a5dcfec7b04c62fa4afd"
   },
   "zone_key": "zone-default-zone"
 }

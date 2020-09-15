@@ -1,11 +1,11 @@
 {
-  "checksum": "17907729d4d4779398cef538be1bc09e1727c1ed6cb6b2b050c6cec986b41605",
+  "checksum": "5ff4587dcfd6b869dcfd467deea784def9f2b017cf9f5973688308107a840a11",
   "circuit_breakers": null,
   "cluster_key": "edge-to-jwt-security-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.2.6",
+      "host": "10.42.1.4",
       "port": 10808,
       "metadata": [
         {
