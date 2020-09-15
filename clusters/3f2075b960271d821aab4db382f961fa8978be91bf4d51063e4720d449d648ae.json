@@ -5,7 +5,7 @@
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.1.4",
+      "host": "10.42.2.4",
       "port": 10808,
       "metadata": [
         {
@@ -22,11 +22,11 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.3"
+          "value": "172.24.0.2"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-0"
+          "value": "k3d-greymatter-server-0"
         }
       ]
     }

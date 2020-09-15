@@ -1,20 +1,20 @@
 {
   "checksum": "",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-internal-jwt-security-cluster",
+  "cluster_key": "catalog-to-data-internal-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.0.4",
+      "host": "10.42.3.9",
       "port": 10808,
       "metadata": [
         {
-          "key": "deployment",
-          "value": "internal-jwt-security"
+          "key": "controller-revision-hash",
+          "value": "data-internal-7cdfccd584"
         },
         {
-          "key": "pod-template-hash",
-          "value": "59c957797d"
+          "key": "statefulset.kubernetes.io/pod-name",
+          "value": "data-internal-0"
         },
         {
           "key": "gm_control_discovery",
@@ -22,25 +22,25 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.6"
+          "value": "172.24.0.5"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-3"
+          "value": "k3d-greymatter-agent-2"
         }
       ]
     }
   ],
   "lb_policy": "",
-  "name": "internal-jwt-security",
+  "name": "data-internal",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "secret_key": "secret-internal-jwt-security-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/edge",
+    "secret_key": "secret-data-internal-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/catalog",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/internal-jwt-security"
+      "spiffe://quickstart.greymatter.io/data-internal"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -48,7 +48,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "9fbcd80d33235a2204faefe6e96ebe03ab0efaf27a6a4b67ddcb032003477915"
+    "checksum": "735e9428352ddd2600ec5fc3ec26137e7dc4731c6e1f2037f8d2451505da26b4"
   },
   "zone_key": "zone-default-zone"
 }
