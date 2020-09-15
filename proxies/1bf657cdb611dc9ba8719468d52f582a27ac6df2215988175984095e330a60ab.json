@@ -1,6 +1,6 @@
 {
   "active_proxy_filters": null,
-  "checksum": "1bf657cdb611dc9ba8719468d52f582a27ac6df2215988175984095e330a60ab",
+  "checksum": "",
   "domain_keys": [
     "domain-control-api",
     "domain-control-api-egress"

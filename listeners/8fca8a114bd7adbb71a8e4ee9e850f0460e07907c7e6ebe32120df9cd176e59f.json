@@ -1,7 +1,7 @@
 {
   "active_http_filters": [],
   "active_network_filters": null,
-  "checksum": "8fca8a114bd7adbb71a8e4ee9e850f0460e07907c7e6ebe32120df9cd176e59f",
+  "checksum": "",
   "domain_keys": [
     "domain-control-api",
     "domain-control-api-egress"

@@ -1,5 +1,5 @@
 {
-  "checksum": "9724049f38433b78cdec22dbee21c0c34263e035c23ade6d4f49c4af145020ec",
+  "checksum": "",
   "circuit_breakers": null,
   "cluster_key": "cluster-control-api",
   "health_checks": [],

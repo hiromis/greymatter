@@ -7,7 +7,7 @@
     "envoy.rbac"
   ],
   "active_network_filters": null,
-  "checksum": "0bf9c2806b8824ac8320d44752d1c0838c73284f0688eeff2106e3912276876a",
+  "checksum": "",
   "domain_keys": [
     "edge",
     "edge-egress"

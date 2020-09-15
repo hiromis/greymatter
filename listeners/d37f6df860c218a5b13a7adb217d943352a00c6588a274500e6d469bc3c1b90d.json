@@ -1,7 +1,7 @@
 {
   "active_http_filters": [],
   "active_network_filters": null,
-  "checksum": "d37f6df860c218a5b13a7adb217d943352a00c6588a274500e6d469bc3c1b90d",
+  "checksum": "",
   "domain_keys": [
     "domain-internal-jwt-security",
     "domain-internal-jwt-security-egress"

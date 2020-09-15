@@ -1,7 +1,7 @@
 {
   "active_http_filters": [],
   "active_network_filters": null,
-  "checksum": "fb578a72db159c5fb434ff86302e0fbd78d3d0121d6ea6d1e368ea24a003be3b",
+  "checksum": "",
   "domain_keys": [
     "edge",
     "edge-egress"

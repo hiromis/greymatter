@@ -1,5 +1,5 @@
 {
-  "checksum": "8782c0c1b47e80e1c169df626873530e418934d134b16864d5215a85cfeff4eb",
+  "checksum": "",
   "circuit_breakers": null,
   "cluster_key": "cluster-jwt-security",
   "health_checks": [],

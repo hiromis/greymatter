@@ -4,7 +4,7 @@
     "envoy.rbac"
   ],
   "active_network_filters": null,
-  "checksum": "840e228b8697412a80b501c6c2d6f1f1ba22ddd233c6e78cf8cb167b45ab4ba6",
+  "checksum": "",
   "domain_keys": [
     "domain-prometheus"
   ],

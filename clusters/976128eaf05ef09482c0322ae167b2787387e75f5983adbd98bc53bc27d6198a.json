@@ -1,5 +1,5 @@
 {
-  "checksum": "976128eaf05ef09482c0322ae167b2787387e75f5983adbd98bc53bc27d6198a",
+  "checksum": "",
   "circuit_breakers": null,
   "cluster_key": "edge-to-control-api-cluster",
   "health_checks": [],

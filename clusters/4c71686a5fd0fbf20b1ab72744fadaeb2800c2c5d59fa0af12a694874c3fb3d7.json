@@ -1,5 +1,5 @@
 {
-  "checksum": "4c71686a5fd0fbf20b1ab72744fadaeb2800c2c5d59fa0af12a694874c3fb3d7",
+  "checksum": "",
   "circuit_breakers": null,
   "cluster_key": "cluster-prometheus",
   "health_checks": [],

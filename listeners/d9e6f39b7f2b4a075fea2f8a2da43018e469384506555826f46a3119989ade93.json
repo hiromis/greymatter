@@ -4,7 +4,7 @@
     "envoy.rbac"
   ],
   "active_network_filters": null,
-  "checksum": "d9e6f39b7f2b4a075fea2f8a2da43018e469384506555826f46a3119989ade93",
+  "checksum": "",
   "domain_keys": [
     "domain-control-api"
   ],

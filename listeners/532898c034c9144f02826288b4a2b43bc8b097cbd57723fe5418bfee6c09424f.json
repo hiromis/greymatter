@@ -4,7 +4,7 @@
     "envoy.rbac"
   ],
   "active_network_filters": null,
-  "checksum": "532898c034c9144f02826288b4a2b43bc8b097cbd57723fe5418bfee6c09424f",
+  "checksum": "",
   "domain_keys": [
     "domain-internal-jwt-security"
   ],

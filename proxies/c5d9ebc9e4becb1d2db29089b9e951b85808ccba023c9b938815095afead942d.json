@@ -1,6 +1,6 @@
 {
   "active_proxy_filters": null,
-  "checksum": "c5d9ebc9e4becb1d2db29089b9e951b85808ccba023c9b938815095afead942d",
+  "checksum": "",
   "domain_keys": [
     "domain-prometheus",
     "domain-prometheus-egress"

@@ -1,7 +1,7 @@
 {
   "active_http_filters": [],
   "active_network_filters": null,
-  "checksum": "954be73292c938f343f5ce45551afcb8e43a3f8c20babb3cbff6cc52904972a5",
+  "checksum": "",
   "domain_keys": [
     "domain-catalog",
     "domain-catalog-egress"

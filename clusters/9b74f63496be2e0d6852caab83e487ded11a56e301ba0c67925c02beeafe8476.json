@@ -1,5 +1,5 @@
 {
-  "checksum": "9b74f63496be2e0d6852caab83e487ded11a56e301ba0c67925c02beeafe8476",
+  "checksum": "",
   "circuit_breakers": null,
   "cluster_key": "edge-to-slo-cluster",
   "health_checks": [],

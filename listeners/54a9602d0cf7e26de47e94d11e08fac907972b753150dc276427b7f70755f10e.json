@@ -1,7 +1,7 @@
 {
   "active_http_filters": [],
   "active_network_filters": null,
-  "checksum": "54a9602d0cf7e26de47e94d11e08fac907972b753150dc276427b7f70755f10e",
+  "checksum": "",
   "domain_keys": [
     "domain-slo",
     "domain-slo-egress"

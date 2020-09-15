@@ -1,5 +1,5 @@
 {
-  "checksum": "155ab5adf1a292cdd6543887e52e97efef1c65add195224abf52059ed9dc65a1",
+  "checksum": "",
   "circuit_breakers": null,
   "cluster_key": "data-internal-to-internal-jwt-cluster",
   "health_checks": [],

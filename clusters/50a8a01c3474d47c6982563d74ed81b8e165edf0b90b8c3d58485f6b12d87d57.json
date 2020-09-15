@@ -1,5 +1,5 @@
 {
-  "checksum": "50a8a01c3474d47c6982563d74ed81b8e165edf0b90b8c3d58485f6b12d87d57",
+  "checksum": "",
   "circuit_breakers": null,
   "cluster_key": "edge-to-internal-jwt-security-cluster",
   "health_checks": [],
