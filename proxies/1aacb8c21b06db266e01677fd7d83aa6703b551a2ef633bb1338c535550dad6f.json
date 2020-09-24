@@ -1,0 +1,18 @@
+{
+  "active_proxy_filters": null,
+  "checksum": "",
+  "domain_keys": [
+    "domain-jwt-security",
+    "domain-jwt-security-egress"
+  ],
+  "listener_keys": [
+    "listener-jwt-security",
+    "listener-jwt-security-egress"
+  ],
+  "listeners": null,
+  "name": "jwt-security",
+  "proxy_filters": null,
+  "proxy_key": "proxy-jwt-security",
+  "upgrades": "",
+  "zone_key": "zone-default-zone"
+}

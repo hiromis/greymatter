@@ -5,16 +5,16 @@
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.1.5",
+      "host": "10.42.4.5",
       "port": 10808,
       "metadata": [
         {
-          "key": "deployment",
-          "value": "edge"
-        },
-        {
           "key": "pod-template-hash",
           "value": "6fd99cbb84"
+        },
+        {
+          "key": "deployment",
+          "value": "edge"
         },
         {
           "key": "gm_control_discovery",
@@ -22,11 +22,11 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.3"
+          "value": "172.24.0.5"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-0"
+          "value": "k3d-greymatter-agent-2"
         }
       ]
     }
