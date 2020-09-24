@@ -5,16 +5,16 @@
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.0.8",
+      "host": "10.42.3.7",
       "port": 10808,
       "metadata": [
         {
-          "key": "statefulset.kubernetes.io/pod-name",
-          "value": "data-internal-0"
-        },
-        {
           "key": "controller-revision-hash",
           "value": "data-internal-7cdfccd584"
+        },
+        {
+          "key": "statefulset.kubernetes.io/pod-name",
+          "value": "data-internal-0"
         },
         {
           "key": "gm_control_discovery",
@@ -22,11 +22,11 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.2"
+          "value": "172.24.0.4"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-server-0"
+          "value": "k3d-greymatter-agent-1"
         }
       ]
     }
