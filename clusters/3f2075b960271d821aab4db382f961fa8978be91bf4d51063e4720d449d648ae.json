@@ -1,24 +1,20 @@
 {
   "checksum": "",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-control-api-cluster",
+  "cluster_key": "edge-to-jwt-security-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.3.6",
+      "host": "10.42.2.4",
       "port": 10808,
       "metadata": [
         {
-          "key": "controller-revision-hash",
-          "value": "control-api-548f8494bb"
-        },
-        {
           "key": "deployment",
-          "value": "control-api"
+          "value": "jwt-security"
         },
         {
-          "key": "statefulset.kubernetes.io/pod-name",
-          "value": "control-api-0"
+          "key": "pod-template-hash",
+          "value": "55c4c8df4"
         },
         {
           "key": "gm_control_discovery",
@@ -36,15 +32,15 @@
     }
   ],
   "lb_policy": "",
-  "name": "control-api",
+  "name": "jwt-security",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "secret_key": "secret-control-api-secret",
+    "secret_key": "secret-jwt-security-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/control-api"
+      "spiffe://quickstart.greymatter.io/jwt-security"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -52,7 +48,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "9761c25dc055e78feb1fd313e0c9911d18507c287807b7121eb6a9d14ef2b6c6"
+    "checksum": "5695bd579654e26d13635813e9571774116b5dd854eba2eaeea50b3cfd3279c3"
   },
   "zone_key": "zone-default-zone"
 }

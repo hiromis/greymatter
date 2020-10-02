@@ -1,20 +1,24 @@
 {
   "checksum": "",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-data-internal-cluster",
+  "cluster_key": "edge-to-prometheus-cluster",
   "health_checks": [],
   "instances": [
     {
-      "host": "10.42.4.8",
+      "host": "10.42.4.11",
       "port": 10808,
       "metadata": [
         {
-          "key": "controller-revision-hash",
-          "value": "data-internal-7cdfccd584"
+          "key": "statefulset.kubernetes.io/pod-name",
+          "value": "prometheus-0"
         },
         {
-          "key": "statefulset.kubernetes.io/pod-name",
-          "value": "data-internal-0"
+          "key": "controller-revision-hash",
+          "value": "prometheus-6c5cc9866f"
+        },
+        {
+          "key": "deployment",
+          "value": "prometheus"
         },
         {
           "key": "gm_control_discovery",
@@ -22,25 +26,25 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.5"
+          "value": "172.24.0.6"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-2"
+          "value": "k3d-greymatter-agent-3"
         }
       ]
     }
   ],
   "lb_policy": "",
-  "name": "data-internal",
+  "name": "prometheus",
   "outlier_detection": null,
   "require_tls": true,
   "secret": {
-    "secret_key": "secret-data-internal-secret",
+    "secret_key": "secret-prometheus-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/data-internal"
+      "spiffe://quickstart.greymatter.io/prometheus"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -48,7 +52,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "5fddbfea0d138a710c9eac185f91b606dc70ceb0a47eaba9c3262153b69ffa6a"
+    "checksum": "f1ddd57d5932850a2e5ae1160bf027f6417cdd542f79acfd8fc406bb097a23c9"
   },
   "zone_key": "zone-default-zone"
 }
