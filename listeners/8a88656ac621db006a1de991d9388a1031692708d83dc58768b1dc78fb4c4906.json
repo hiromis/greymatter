@@ -1,0 +1,50 @@
+{
+  "access_loggers": {
+    "http_connection_loggers": {
+      "disabled": false,
+      "file_loggers": null,
+      "http_grpc_access_loggers": null
+    },
+    "http_upstream_loggers": {
+      "disabled": false,
+      "file_loggers": null,
+      "http_grpc_access_loggers": null
+    }
+  },
+  "active_http_filters": [],
+  "active_network_filters": null,
+  "checksum": "",
+  "delayed_close_timeout": "",
+  "domain_keys": [
+    "domain-prometheus",
+    "domain-prometheus-egress"
+  ],
+  "drain_timeout": "",
+  "http2_protocol_options": null,
+  "http_filters": {
+    "gm_inheaders": {}
+  },
+  "http_protocol_options": null,
+  "ip": "127.0.0.1",
+  "listener_key": "listener-prometheus-egress",
+  "name": "prometheus",
+  "network_filters": null,
+  "port": 10909,
+  "protocol": "http_auto",
+  "request_timeout": "",
+  "secret": {
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "checksum": ""
+  },
+  "stream_idle_timeout": "",
+  "tracing_config": null,
+  "use_remote_address": false,
+  "zone_key": "zone-default-zone"
+}

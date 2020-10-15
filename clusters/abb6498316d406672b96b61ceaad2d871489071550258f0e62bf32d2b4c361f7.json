@@ -1,0 +1,35 @@
+{
+  "checksum": "",
+  "circuit_breakers": null,
+  "cluster_key": "cluster-prometheus",
+  "common_lb_config": null,
+  "health_checks": [],
+  "http2_protocol_options": null,
+  "http_protocol_options": null,
+  "instances": [
+    {
+      "host": "0.0.0.0",
+      "port": 9090,
+      "metadata": null
+    }
+  ],
+  "lb_policy": "",
+  "least_request_lb_config": null,
+  "name": "prometheus-service",
+  "original_dst_lb_config": null,
+  "outlier_detection": null,
+  "protocol_selection": "",
+  "ring_hash_lb_config": null,
+  "secret": {
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
+    "set_current_client_cert_details": {
+      "uri": false
+    },
+    "checksum": ""
+  },
+  "zone_key": "zone-default-zone"
+}

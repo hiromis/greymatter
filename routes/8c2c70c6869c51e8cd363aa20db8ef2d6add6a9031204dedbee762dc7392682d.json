@@ -1,0 +1,27 @@
+{
+  "checksum": "",
+  "cohort_seed": null,
+  "domain_key": "edge",
+  "filter_configs": null,
+  "filter_metadata": null,
+  "high_priority": false,
+  "idle_timeout": "",
+  "path": "/services/catalog/latest",
+  "prefix_rewrite": "/services/catalog/latest/",
+  "redirects": null,
+  "request_headers_to_add": null,
+  "request_headers_to_remove": null,
+  "response_data": {},
+  "response_headers_to_add": null,
+  "response_headers_to_remove": null,
+  "retry_policy": null,
+  "route_key": "edge-catalog-route-slash",
+  "route_match": {
+    "path": "",
+    "match_type": ""
+  },
+  "rules": null,
+  "shared_rules_key": "edge-catalog-shared-rules",
+  "timeout": "",
+  "zone_key": "zone-default-zone"
+}
