@@ -1,23 +1,23 @@
 {
   "checksum": "",
   "circuit_breakers": null,
-  "cluster_key": "cluster-edge",
+  "cluster_key": "edge-to-slo-cluster",
   "common_lb_config": null,
   "health_checks": [],
   "http2_protocol_options": null,
   "http_protocol_options": null,
   "instances": [
     {
-      "host": "10.42.1.7",
+      "host": "10.42.0.10",
       "port": 10808,
       "metadata": [
         {
           "key": "deployment",
-          "value": "edge"
+          "value": "slo"
         },
         {
           "key": "pod-template-hash",
-          "value": "5fb5998c57"
+          "value": "dc8dd84fd"
         },
         {
           "key": "gm_control_discovery",
@@ -25,32 +25,37 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.4"
+          "value": "172.24.0.5"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-1"
+          "value": "k3d-greymatter-agent-2"
         }
       ]
     }
   ],
   "lb_policy": "",
   "least_request_lb_config": null,
-  "name": "edge",
+  "name": "slo",
   "original_dst_lb_config": null,
   "outlier_detection": null,
   "protocol_selection": "",
+  "require_tls": true,
   "ring_hash_lb_config": null,
   "secret": {
-    "secret_key": "",
-    "secret_name": "",
-    "secret_validation_name": "",
-    "subject_names": null,
-    "ecdh_curves": null,
+    "secret_key": "secret-slo-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/edge",
+    "secret_validation_name": "spiffe://quickstart.greymatter.io",
+    "subject_names": [
+      "spiffe://quickstart.greymatter.io/slo"
+    ],
+    "ecdh_curves": [
+      "X25519:P-256:P-521:P-384"
+    ],
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": ""
+    "checksum": "755e1b5e93a7d6518e24ab738884ecb0a4f1d6d2d2c86aad34eeaf2a8e0c9535"
   },
   "zone_key": "zone-default-zone"
 }

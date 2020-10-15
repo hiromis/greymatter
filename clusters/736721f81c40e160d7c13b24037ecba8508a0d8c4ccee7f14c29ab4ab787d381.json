@@ -21,11 +21,11 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.2"
+          "value": "172.24.0.6"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-server-0"
+          "value": "k3d-greymatter-agent-3"
         }
       ]
     }
