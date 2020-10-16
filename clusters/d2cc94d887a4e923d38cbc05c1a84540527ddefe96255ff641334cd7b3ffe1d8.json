@@ -8,16 +8,16 @@
   "http_protocol_options": null,
   "instances": [
     {
-      "host": "10.42.2.7",
+      "host": "10.42.1.6",
       "port": 10808,
       "metadata": [
         {
-          "key": "pod-template-hash",
-          "value": "5fb5998c57"
-        },
-        {
           "key": "deployment",
           "value": "edge"
+        },
+        {
+          "key": "pod-template-hash",
+          "value": "5fb5998c57"
         },
         {
           "key": "gm_control_discovery",
@@ -25,11 +25,11 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.4"
+          "value": "172.24.0.3"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-1"
+          "value": "k3d-greymatter-agent-0"
         }
       ]
     }
