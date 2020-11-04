@@ -1,0 +1,18 @@
+{
+  "capabilities": [
+    "Sense",
+    "Mesh",
+    "Apps",
+    "Security"
+  ],
+  "clusterCount": 6,
+  "clusterDownCount": 0,
+  "clusterStableCount": 6,
+  "clusterWarningCount": 0,
+  "externalLinks": [],
+  "instanceCount": 6,
+  "owners": [
+    "Decipher"
+  ],
+  "zoneName": "zone-default-zone"
+}

@@ -1,0 +1,36 @@
+{
+  "apiEndpoint": "",
+  "apiSpecEndpoint": "",
+  "authorized": true,
+  "businessImpact": "low",
+  "capability": "Mesh",
+  "clusterID": "",
+  "clusterName": "control-api",
+  "description": "",
+  "documentation": "/services/control-api/latest/",
+  "enableHistoricalMetrics": true,
+  "enableInstanceMetrics": true,
+  "externalLinks": [],
+  "instances": [
+    {
+      "name": "4d4cabd5dfaf945e917204172c59f79a",
+      "startTime": 1604462322713
+    }
+  ],
+  "maxInstances": 1,
+  "meshID": "",
+  "metricsPort": 8081,
+  "metricsTemplate": "",
+  "minInstances": 1,
+  "name": "Grey Matter Control API",
+  "owner": "Decipher",
+  "ownerURL": "",
+  "prometheusJob": "control-api",
+  "protocols": [
+    "mTLS"
+  ],
+  "runtime": "GO",
+  "status": "stable",
+  "version": "1.4.3",
+  "zoneName": "zone-default-zone"
+}

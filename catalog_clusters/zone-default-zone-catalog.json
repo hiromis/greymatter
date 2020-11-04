@@ -1,0 +1,36 @@
+{
+  "apiEndpoint": "",
+  "apiSpecEndpoint": "",
+  "authorized": true,
+  "businessImpact": "low",
+  "capability": "Mesh",
+  "clusterID": "",
+  "clusterName": "catalog",
+  "description": "",
+  "documentation": "/services/catalog/latest/",
+  "enableHistoricalMetrics": true,
+  "enableInstanceMetrics": true,
+  "externalLinks": [],
+  "instances": [
+    {
+      "name": "d7341b4c12922b7b6c7af3119a086606",
+      "startTime": 1604462415972
+    }
+  ],
+  "maxInstances": 1,
+  "meshID": "",
+  "metricsPort": 8081,
+  "metricsTemplate": "",
+  "minInstances": 1,
+  "name": "Grey Matter Catalog",
+  "owner": "Decipher",
+  "ownerURL": "",
+  "prometheusJob": "catalog",
+  "protocols": [
+    "mTLS"
+  ],
+  "runtime": "GO",
+  "status": "stable",
+  "version": "1.0.7",
+  "zoneName": "zone-default-zone"
+}
