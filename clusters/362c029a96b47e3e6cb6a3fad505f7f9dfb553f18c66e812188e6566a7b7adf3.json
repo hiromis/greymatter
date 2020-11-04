@@ -8,20 +8,24 @@
   "http_protocol_options": null,
   "instances": [
     {
-      "host": "10.42.3.7",
+      "host": "10.42.3.4",
       "port": 10808,
       "metadata": [
         {
+          "key": "statefulset.kubernetes.io/pod-name",
+          "value": "control-api-0"
+        },
+        {
           "key": "controller-revision-hash",
-          "value": "control-api-dd94d95c8"
+          "value": "control-api-5cc5468447"
         },
         {
           "key": "deployment",
           "value": "control-api"
         },
         {
-          "key": "statefulset.kubernetes.io/pod-name",
-          "value": "control-api-0"
+          "key": "greymatter",
+          "value": "fabric"
         },
         {
           "key": "gm_control_discovery",
@@ -29,11 +33,11 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.4"
+          "value": "172.29.0.3"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-1"
+          "value": "k3d-greymatter-agent-0"
         }
       ]
     }

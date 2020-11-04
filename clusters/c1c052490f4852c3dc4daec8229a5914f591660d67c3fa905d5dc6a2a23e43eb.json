@@ -1,23 +1,23 @@
 {
   "checksum": "",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-jwt-security-cluster",
+  "cluster_key": "edge-to-dashboard-cluster",
   "common_lb_config": null,
   "health_checks": [],
   "http2_protocol_options": null,
   "http_protocol_options": null,
   "instances": [
     {
-      "host": "10.42.2.4",
+      "host": "10.42.2.6",
       "port": 10808,
       "metadata": [
         {
           "key": "pod-template-hash",
-          "value": "67dddd6475"
+          "value": "6d544ff56c"
         },
         {
-          "key": "deployment",
-          "value": "jwt-security"
+          "key": "greymatter",
+          "value": "sense"
         },
         {
           "key": "gm_control_discovery",
@@ -25,29 +25,29 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.24.0.5"
+          "value": "172.29.0.4"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-2"
+          "value": "k3d-greymatter-agent-1"
         }
       ]
     }
   ],
   "lb_policy": "",
   "least_request_lb_config": null,
-  "name": "jwt-security",
+  "name": "dashboard",
   "original_dst_lb_config": null,
   "outlier_detection": null,
   "protocol_selection": "",
   "require_tls": true,
   "ring_hash_lb_config": null,
   "secret": {
-    "secret_key": "secret-jwt-security-secret",
+    "secret_key": "secret-dashboard-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/jwt-security"
+      "spiffe://quickstart.greymatter.io/dashboard"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -55,7 +55,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "5695bd579654e26d13635813e9571774116b5dd854eba2eaeea50b3cfd3279c3"
+    "checksum": "cdc4c1da9d14f68186fda8e7f9fbaadc9354d2de6c83fab10ad672d51770a102"
   },
   "zone_key": "zone-default-zone"
 }
