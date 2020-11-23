@@ -1,17 +1,12 @@
 {
   "capabilities": [
-    "Mesh",
+    "Apps",
     "Security",
     "Sense",
     "Math",
-    "Apps"
+    "Mesh"
   ],
-  "clusterCount": 7,
-  "clusterDownCount": 1,
-  "clusterStableCount": 6,
-  "clusterWarningCount": 0,
   "externalLinks": [],
-  "instanceCount": 6,
   "owners": [
     "Decipher"
   ],
