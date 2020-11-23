@@ -1,20 +1,20 @@
 {
-  "apiEndpoint": "",
+  "apiEndpoint": "https://localhost:30000/services/control-api/latest/",
   "apiSpecEndpoint": "",
   "authorized": true,
   "businessImpact": "low",
   "capability": "Mesh",
   "clusterID": "",
   "clusterName": "control-api",
-  "description": "",
+  "description": "The purpose of the Grey Matter Control API is to update the configuration of every Grey Matter Proxy in the mesh.",
   "documentation": "/services/control-api/latest/",
   "enableHistoricalMetrics": true,
   "enableInstanceMetrics": true,
   "externalLinks": [],
   "instances": [
     {
-      "name": "4d4cabd5dfaf945e917204172c59f79a",
-      "startTime": 1604462322713
+      "name": "623d51c22b95ca5195cff4b896979d2d",
+      "startTime": 1606165292602
     }
   ],
   "maxInstances": 1,
@@ -24,13 +24,13 @@
   "minInstances": 1,
   "name": "Grey Matter Control API",
   "owner": "Decipher",
-  "ownerURL": "",
+  "ownerURL": "https://greymatter.io",
   "prometheusJob": "control-api",
   "protocols": [
     "mTLS"
   ],
   "runtime": "GO",
   "status": "stable",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "zoneName": "zone-default-zone"
 }

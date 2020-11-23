@@ -1,20 +1,20 @@
 {
-  "apiEndpoint": "",
-  "apiSpecEndpoint": "",
+  "apiEndpoint": "https://localhost:30000/services/catalog/latest/",
+  "apiSpecEndpoint": "/services/catalog/latest/",
   "authorized": true,
   "businessImpact": "low",
   "capability": "Mesh",
   "clusterID": "",
   "clusterName": "catalog",
-  "description": "",
+  "description": "The Grey Matter Catalog service interfaces with the Fabric mesh xDS interface to provide high level summaries and more easily consumable views of the current state of the mesh. It powers the Grey Matter application and any other applications that need to understand what is present in the mesh.",
   "documentation": "/services/catalog/latest/",
   "enableHistoricalMetrics": true,
   "enableInstanceMetrics": true,
   "externalLinks": [],
   "instances": [
     {
-      "name": "d7341b4c12922b7b6c7af3119a086606",
-      "startTime": 1604462415972
+      "name": "96bf183f50fec8a9cf21d825a8128e35",
+      "startTime": 1606165395218
     }
   ],
   "maxInstances": 1,
@@ -24,13 +24,13 @@
   "minInstances": 1,
   "name": "Grey Matter Catalog",
   "owner": "Decipher",
-  "ownerURL": "",
+  "ownerURL": "https://greymatter.io",
   "prometheusJob": "catalog",
   "protocols": [
     "mTLS"
   ],
   "runtime": "GO",
   "status": "stable",
-  "version": "1.0.7",
+  "version": "1.1",
   "zoneName": "zone-default-zone"
 }

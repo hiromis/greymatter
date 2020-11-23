@@ -127,6 +127,10 @@
     },
     "gm_inheaders": {},
     "gm_jwtsecurity": {
+      "timeoutMs": 1000,
+      "retryDelayMs": 200,
+      "cacheLimit": 10,
+      "cachedTokenExp": 20,
       "apiKey": "dm9sY2Fuby1lcGlkZW1pYy10d2VsZnRoLXRhbWFsZQ==",
       "endpoint": "http://localhost:10909/jwt",
       "jwtHeaderName": "userpolicy"

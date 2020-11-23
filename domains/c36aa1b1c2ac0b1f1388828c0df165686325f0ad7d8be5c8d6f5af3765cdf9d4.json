@@ -1,0 +1,13 @@
+{
+  "aliases": null,
+  "checksum": "",
+  "cors_config": null,
+  "custom_headers": null,
+  "domain_key": "default-fibonacci.ingress.domain",
+  "force_https": true,
+  "gzip_enabled": false,
+  "name": "*",
+  "port": 10808,
+  "redirects": null,
+  "zone_key": "zone-default-zone"
+}

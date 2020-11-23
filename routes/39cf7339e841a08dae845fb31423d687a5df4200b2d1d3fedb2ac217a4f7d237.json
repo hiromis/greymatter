@@ -1,0 +1,27 @@
+{
+  "checksum": "",
+  "cohort_seed": null,
+  "domain_key": "default-fibonacci.ingress.domain",
+  "filter_configs": null,
+  "filter_metadata": null,
+  "high_priority": false,
+  "idle_timeout": "",
+  "path": "/",
+  "prefix_rewrite": "",
+  "redirects": null,
+  "request_headers_to_add": null,
+  "request_headers_to_remove": null,
+  "response_data": {},
+  "response_headers_to_add": null,
+  "response_headers_to_remove": null,
+  "retry_policy": null,
+  "route_key": "default-fibonacci.local.route",
+  "route_match": {
+    "path": "",
+    "match_type": ""
+  },
+  "rules": null,
+  "shared_rules_key": "default-fibonacci.local.rules",
+  "timeout": "",
+  "zone_key": "zone-default-zone"
+}

@@ -1,21 +1,21 @@
 {
   "checksum": "",
   "circuit_breakers": null,
-  "cluster_key": "cluster-control-api",
+  "cluster_key": "default-fibonacci.local.cluster",
   "common_lb_config": null,
   "health_checks": [],
   "http2_protocol_options": null,
   "http_protocol_options": null,
   "instances": [
     {
-      "host": "0.0.0.0",
-      "port": 5555,
+      "host": "127.0.0.1",
+      "port": 8080,
       "metadata": null
     }
   ],
   "lb_policy": "",
   "least_request_lb_config": null,
-  "name": "control-api-service",
+  "name": "default-fibonacci.local",
   "original_dst_lb_config": null,
   "outlier_detection": null,
   "protocol_selection": "",
