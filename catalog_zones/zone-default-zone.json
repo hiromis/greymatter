@@ -1,10 +1,10 @@
 {
   "capabilities": [
-    "Apps",
     "Security",
     "Sense",
     "Math",
-    "Mesh"
+    "Mesh",
+    "Apps"
   ],
   "externalLinks": [],
   "owners": [

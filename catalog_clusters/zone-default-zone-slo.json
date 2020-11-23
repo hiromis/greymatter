@@ -11,12 +11,6 @@
   "enableHistoricalMetrics": true,
   "enableInstanceMetrics": true,
   "externalLinks": [],
-  "instances": [
-    {
-      "name": "c2fad0ed832d542432bda0909e5a5eb8",
-      "startTime": 1606165423989
-    }
-  ],
   "maxInstances": 1,
   "meshID": "",
   "metricsPort": 8081,
