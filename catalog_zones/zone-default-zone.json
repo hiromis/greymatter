@@ -1,12 +1,13 @@
 {
   "capabilities": [
-    "Sense",
     "Mesh",
-    "Apps",
-    "Security"
+    "Security",
+    "Sense",
+    "Math",
+    "Apps"
   ],
-  "clusterCount": 6,
-  "clusterDownCount": 0,
+  "clusterCount": 7,
+  "clusterDownCount": 1,
   "clusterStableCount": 6,
   "clusterWarningCount": 0,
   "externalLinks": [],
@@ -14,5 +15,7 @@
   "owners": [
     "Decipher"
   ],
+  "requestCluster": "edge",
+  "serverAddress": "control.default.svc.cluster.local:50000",
   "zoneName": "zone-default-zone"
 }
