@@ -1,7 +1,6 @@
 {
   "apiEndpoint": "https://localhost:30000",
   "apiSpecEndpoint": "",
-  "authorized": true,
   "businessImpact": "low",
   "capability": "Mesh",
   "clusterID": "",
@@ -20,11 +19,7 @@
   "owner": "Decipher",
   "ownerURL": "https://greymatter.io",
   "prometheusJob": "edge",
-  "protocols": [
-    "mTLS"
-  ],
   "runtime": "GO",
-  "status": "stable",
   "version": "1.5.1",
   "zoneName": "zone-default-zone"
 }

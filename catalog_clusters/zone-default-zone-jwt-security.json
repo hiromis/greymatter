@@ -1,7 +1,6 @@
 {
   "apiEndpoint": "https://localhost:30000/services/jwt-security/latest/",
   "apiSpecEndpoint": "",
-  "authorized": true,
   "businessImpact": "low",
   "capability": "Security",
   "clusterID": "",
@@ -20,11 +19,7 @@
   "owner": "Decipher",
   "ownerURL": "https://greymatter.io",
   "prometheusJob": "jwt-security",
-  "protocols": [
-    "mTLS"
-  ],
   "runtime": "GO",
-  "status": "stable",
   "version": "1.2.0",
   "zoneName": "zone-default-zone"
 }

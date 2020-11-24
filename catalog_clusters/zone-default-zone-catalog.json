@@ -1,7 +1,6 @@
 {
   "apiEndpoint": "https://localhost:30000/services/catalog/latest/",
   "apiSpecEndpoint": "/services/catalog/latest/",
-  "authorized": true,
   "businessImpact": "low",
   "capability": "Mesh",
   "clusterID": "",
@@ -20,11 +19,7 @@
   "owner": "Decipher",
   "ownerURL": "https://greymatter.io",
   "prometheusJob": "catalog",
-  "protocols": [
-    "mTLS"
-  ],
   "runtime": "GO",
-  "status": "stable",
   "version": "1.1",
   "zoneName": "zone-default-zone"
 }

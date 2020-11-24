@@ -1,7 +1,6 @@
 {
   "apiEndpoint": "",
   "apiSpecEndpoint": "",
-  "authorized": true,
   "businessImpact": "low",
   "capability": "Math",
   "clusterID": "",
@@ -20,11 +19,7 @@
   "owner": "Decipher",
   "ownerURL": "",
   "prometheusJob": "default-fibonacci",
-  "protocols": [
-    "mTLS"
-  ],
   "runtime": "GO",
-  "status": "down",
   "version": "latest",
   "zoneName": "zone-default-zone"
 }
