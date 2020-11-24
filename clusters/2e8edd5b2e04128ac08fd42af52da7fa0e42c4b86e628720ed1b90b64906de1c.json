@@ -1,27 +1,27 @@
 {
   "checksum": "",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-jwt-security-cluster",
+  "cluster_key": "cluster-edge",
   "common_lb_config": null,
   "health_checks": [],
   "http2_protocol_options": null,
   "http_protocol_options": null,
   "instances": [
     {
-      "host": "10.42.0.4",
+      "host": "10.42.3.7",
       "port": 10808,
       "metadata": [
         {
-          "key": "pod-template-hash",
-          "value": "5c96d95749"
-        },
-        {
           "key": "deployment",
-          "value": "jwt-security"
+          "value": "edge"
         },
         {
           "key": "greymatter",
-          "value": "fabric"
+          "value": "edge"
+        },
+        {
+          "key": "pod-template-hash",
+          "value": "ff5578dbf"
         },
         {
           "key": "gm_control_discovery",
@@ -29,37 +29,32 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.20.0.3"
+          "value": "172.20.0.4"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-0"
+          "value": "k3d-greymatter-agent-1"
         }
       ]
     }
   ],
   "lb_policy": "",
   "least_request_lb_config": null,
-  "name": "jwt-security",
+  "name": "edge",
   "original_dst_lb_config": null,
   "outlier_detection": null,
   "protocol_selection": "",
-  "require_tls": true,
   "ring_hash_lb_config": null,
   "secret": {
-    "secret_key": "secret-jwt-security-secret",
-    "secret_name": "spiffe://quickstart.greymatter.io/edge",
-    "secret_validation_name": "spiffe://quickstart.greymatter.io",
-    "subject_names": [
-      "spiffe://quickstart.greymatter.io/jwt-security"
-    ],
-    "ecdh_curves": [
-      "X25519:P-256:P-521:P-384"
-    ],
+    "secret_key": "",
+    "secret_name": "",
+    "secret_validation_name": "",
+    "subject_names": null,
+    "ecdh_curves": null,
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "5695bd579654e26d13635813e9571774116b5dd854eba2eaeea50b3cfd3279c3"
+    "checksum": ""
   },
   "zone_key": "zone-default-zone"
 }

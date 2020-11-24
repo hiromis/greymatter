@@ -1,7 +1,7 @@
 {
   "checksum": "",
   "circuit_breakers": null,
-  "cluster_key": "edge.default-fibonacci.cluster",
+  "cluster_key": "edge-to-prometheus-cluster",
   "common_lb_config": null,
   "health_checks": [],
   "http2_protocol_options": null,
@@ -9,18 +9,18 @@
   "instances": [],
   "lb_policy": "",
   "least_request_lb_config": null,
-  "name": "default-fibonacci",
+  "name": "prometheus",
   "original_dst_lb_config": null,
   "outlier_detection": null,
   "protocol_selection": "",
   "require_tls": true,
   "ring_hash_lb_config": null,
   "secret": {
-    "secret_key": "edge.identity",
+    "secret_key": "secret-prometheus-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/default-fibonacci"
+      "spiffe://quickstart.greymatter.io/prometheus"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -28,7 +28,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "52f9a3a9c09aa8794b970dd7c346257760e5a97cea76b542c2fa781eda897c58"
+    "checksum": "f1ddd57d5932850a2e5ae1160bf027f6417cdd542f79acfd8fc406bb097a23c9"
   },
   "zone_key": "zone-default-zone"
 }

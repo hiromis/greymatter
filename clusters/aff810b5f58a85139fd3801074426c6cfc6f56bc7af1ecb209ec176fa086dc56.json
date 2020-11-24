@@ -6,34 +6,7 @@
   "health_checks": [],
   "http2_protocol_options": null,
   "http_protocol_options": null,
-  "instances": [
-    {
-      "host": "10.42.0.6",
-      "port": 10808,
-      "metadata": [
-        {
-          "key": "greymatter",
-          "value": "sense"
-        },
-        {
-          "key": "pod-template-hash",
-          "value": "f6dc848d5"
-        },
-        {
-          "key": "gm_control_discovery",
-          "value": "true"
-        },
-        {
-          "key": "gm_k8s_host_ip",
-          "value": "172.20.0.3"
-        },
-        {
-          "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-0"
-        }
-      ]
-    }
-  ],
+  "instances": [],
   "lb_policy": "",
   "least_request_lb_config": null,
   "name": "dashboard",

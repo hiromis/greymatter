@@ -6,7 +6,7 @@
   "clusterID": "",
   "clusterName": "slo",
   "description": "Grey Matter Service Level Objectives (SLOs) allows users to manage objectives towards service-level agreements.",
-  "documentation": "",
+  "documentation": "/services/slo/latest/",
   "enableHistoricalMetrics": true,
   "enableInstanceMetrics": true,
   "externalLinks": [],
