@@ -1,5 +1,5 @@
 {
-  "apiEndpoint": "https://localhost:30000",
+  "apiEndpoint": "",
   "apiSpecEndpoint": "",
   "businessImpact": "low",
   "capability": "Apps",

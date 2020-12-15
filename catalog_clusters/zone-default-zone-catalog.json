@@ -1,5 +1,5 @@
 {
-  "apiEndpoint": "https://localhost:30000/services/catalog/latest/",
+  "apiEndpoint": "services/catalog/latest/",
   "apiSpecEndpoint": "/services/catalog/latest/",
   "businessImpact": "low",
   "capability": "Mesh",

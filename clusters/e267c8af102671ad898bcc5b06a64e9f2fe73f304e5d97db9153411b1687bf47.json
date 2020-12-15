@@ -8,17 +8,9 @@
   "http_protocol_options": null,
   "instances": [
     {
-      "host": "10.42.0.4",
+      "host": "10.42.1.4",
       "port": 10808,
       "metadata": [
-        {
-          "key": "controller-revision-hash",
-          "value": "control-api-6dfcdc7b9"
-        },
-        {
-          "key": "deployment",
-          "value": "control-api"
-        },
         {
           "key": "greymatter",
           "value": "fabric"
@@ -28,16 +20,24 @@
           "value": "control-api-0"
         },
         {
+          "key": "controller-revision-hash",
+          "value": "control-api-864766b45d"
+        },
+        {
+          "key": "deployment",
+          "value": "control-api"
+        },
+        {
           "key": "gm_control_discovery",
           "value": "true"
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.20.0.5"
+          "value": "172.20.0.6"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-2"
+          "value": "k3d-greymatter-agent-3"
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "apiEndpoint": "https://localhost:30000/services/jwt-security/latest/",
+  "apiEndpoint": "services/jwt-security/latest/",
   "apiSpecEndpoint": "/services/jwt-security/latest/",
   "businessImpact": "low",
   "capability": "Security",

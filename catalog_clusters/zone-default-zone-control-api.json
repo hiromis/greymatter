@@ -1,5 +1,5 @@
 {
-  "apiEndpoint": "https://localhost:30000/services/control-api/latest/",
+  "apiEndpoint": "services/control-api/latest/",
   "apiSpecEndpoint": "/services/control-api/latest/",
   "businessImpact": "low",
   "capability": "Mesh",
