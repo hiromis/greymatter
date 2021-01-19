@@ -1,31 +1,23 @@
 {
   "checksum": "",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-control-api-cluster",
+  "cluster_key": "edge-to-dashboard-cluster",
   "common_lb_config": null,
   "health_checks": [],
   "http2_protocol_options": null,
   "http_protocol_options": null,
   "instances": [
     {
-      "host": "10.42.1.4",
+      "host": "10.42.4.7",
       "port": 10808,
       "metadata": [
         {
+          "key": "pod-template-hash",
+          "value": "8568bdc785"
+        },
+        {
           "key": "greymatter",
-          "value": "fabric"
-        },
-        {
-          "key": "statefulset.kubernetes.io/pod-name",
-          "value": "control-api-0"
-        },
-        {
-          "key": "controller-revision-hash",
-          "value": "control-api-864766b45d"
-        },
-        {
-          "key": "deployment",
-          "value": "control-api"
+          "value": "sense"
         },
         {
           "key": "gm_control_discovery",
@@ -33,7 +25,7 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.20.0.6"
+          "value": "172.19.0.6"
         },
         {
           "key": "gm_k8s_node_name",
@@ -44,18 +36,18 @@
   ],
   "lb_policy": "",
   "least_request_lb_config": null,
-  "name": "control-api",
+  "name": "dashboard",
   "original_dst_lb_config": null,
   "outlier_detection": null,
   "protocol_selection": "",
   "require_tls": true,
   "ring_hash_lb_config": null,
   "secret": {
-    "secret_key": "secret-control-api-secret",
+    "secret_key": "secret-dashboard-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/control-api"
+      "spiffe://quickstart.greymatter.io/dashboard"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -63,7 +55,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "9761c25dc055e78feb1fd313e0c9911d18507c287807b7121eb6a9d14ef2b6c6"
+    "checksum": "cdc4c1da9d14f68186fda8e7f9fbaadc9354d2de6c83fab10ad672d51770a102"
   },
   "zone_key": "zone-default-zone"
 }
