@@ -8,7 +8,7 @@
   "http_protocol_options": null,
   "instances": [
     {
-      "host": "10.42.1.6",
+      "host": "10.42.2.4",
       "port": 10808,
       "metadata": [
         {

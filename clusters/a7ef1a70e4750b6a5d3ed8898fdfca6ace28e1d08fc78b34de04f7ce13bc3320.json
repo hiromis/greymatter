@@ -1,31 +1,27 @@
 {
   "checksum": "",
   "circuit_breakers": null,
-  "cluster_key": "edge-to-control-api-cluster",
+  "cluster_key": "edge-to-catalog-cluster",
   "common_lb_config": null,
   "health_checks": [],
   "http2_protocol_options": null,
   "http_protocol_options": null,
   "instances": [
     {
-      "host": "10.42.2.5",
+      "host": "10.42.0.7",
       "port": 10808,
       "metadata": [
         {
-          "key": "greymatter",
-          "value": "fabric"
-        },
-        {
-          "key": "statefulset.kubernetes.io/pod-name",
-          "value": "control-api-0"
-        },
-        {
-          "key": "controller-revision-hash",
-          "value": "control-api-559cb67878"
+          "key": "pod-template-hash",
+          "value": "6f7dbbcdcf"
         },
         {
           "key": "deployment",
-          "value": "control-api"
+          "value": "catalog"
+        },
+        {
+          "key": "greymatter",
+          "value": "sense"
         },
         {
           "key": "gm_control_discovery",
@@ -33,29 +29,29 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.19.0.4"
+          "value": "172.19.0.2"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-1"
+          "value": "k3d-greymatter-server-0"
         }
       ]
     }
   ],
   "lb_policy": "",
   "least_request_lb_config": null,
-  "name": "control-api",
+  "name": "catalog",
   "original_dst_lb_config": null,
   "outlier_detection": null,
   "protocol_selection": "",
   "require_tls": true,
   "ring_hash_lb_config": null,
   "secret": {
-    "secret_key": "secret-control-api-secret",
+    "secret_key": "secret-catalog-secret",
     "secret_name": "spiffe://quickstart.greymatter.io/edge",
     "secret_validation_name": "spiffe://quickstart.greymatter.io",
     "subject_names": [
-      "spiffe://quickstart.greymatter.io/control-api"
+      "spiffe://quickstart.greymatter.io/catalog"
     ],
     "ecdh_curves": [
       "X25519:P-256:P-521:P-384"
@@ -63,7 +59,7 @@
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": "9761c25dc055e78feb1fd313e0c9911d18507c287807b7121eb6a9d14ef2b6c6"
+    "checksum": "157df0d73942b091b0052b1897a6f556813e9b0523709b6dfd2ec0b6b67cfd54"
   },
   "zone_key": "zone-default-zone"
 }

@@ -20,6 +20,6 @@
   "ownerURL": "https://greymatter.io",
   "prometheusJob": "control-api",
   "runtime": "GO",
-  "version": "1.5.0",
+  "version": "1.5.4",
   "zoneName": "zone-default-zone"
 }

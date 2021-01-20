@@ -16,7 +16,6 @@
   "checksum": "",
   "delayed_close_timeout": "",
   "domain_keys": [
-    "edge",
     "edge-egress"
   ],
   "drain_timeout": "",
