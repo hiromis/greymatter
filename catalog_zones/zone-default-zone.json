@@ -1,15 +1,10 @@
 {
-  "capabilities": [
-    "Mesh",
-    "Apps",
-    "Security",
-    "Sense"
-  ],
+  "caPath": "",
+  "certPath": "",
   "externalLinks": [],
-  "owners": [
-    "Decipher"
-  ],
+  "keyPath": "",
   "requestCluster": "edge",
   "serverAddress": "control.default.svc.cluster.local:50000",
+  "useTls": false,
   "zoneName": "zone-default-zone"
 }
