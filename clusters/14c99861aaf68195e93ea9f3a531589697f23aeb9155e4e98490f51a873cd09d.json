@@ -1,27 +1,23 @@
 {
   "checksum": "",
   "circuit_breakers": null,
-  "cluster_key": "cluster-edge",
+  "cluster_key": "edge-to-dashboard-cluster",
   "common_lb_config": null,
   "health_checks": [],
   "http2_protocol_options": null,
   "http_protocol_options": null,
   "instances": [
     {
-      "host": "10.42.0.5",
+      "host": "10.42.2.8",
       "port": 10808,
       "metadata": [
         {
           "key": "pod-template-hash",
-          "value": "bcf455b77"
-        },
-        {
-          "key": "deployment",
-          "value": "edge"
+          "value": "7dbc688945"
         },
         {
           "key": "greymatter",
-          "value": "edge"
+          "value": "sense"
         },
         {
           "key": "gm_control_discovery",
@@ -29,32 +25,37 @@
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.19.0.2"
+          "value": "172.19.0.5"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-server-0"
+          "value": "k3d-greymatter-agent-2"
         }
       ]
     }
   ],
   "lb_policy": "",
   "least_request_lb_config": null,
-  "name": "edge",
+  "name": "dashboard",
   "original_dst_lb_config": null,
   "outlier_detection": null,
   "protocol_selection": "",
+  "require_tls": true,
   "ring_hash_lb_config": null,
   "secret": {
-    "secret_key": "",
-    "secret_name": "",
-    "secret_validation_name": "",
-    "subject_names": null,
-    "ecdh_curves": null,
+    "secret_key": "secret-dashboard-secret",
+    "secret_name": "spiffe://quickstart.greymatter.io/edge",
+    "secret_validation_name": "spiffe://quickstart.greymatter.io",
+    "subject_names": [
+      "spiffe://quickstart.greymatter.io/dashboard"
+    ],
+    "ecdh_curves": [
+      "X25519:P-256:P-521:P-384"
+    ],
     "set_current_client_cert_details": {
       "uri": false
     },
-    "checksum": ""
+    "checksum": "cdc4c1da9d14f68186fda8e7f9fbaadc9354d2de6c83fab10ad672d51770a102"
   },
   "zone_key": "zone-default-zone"
 }

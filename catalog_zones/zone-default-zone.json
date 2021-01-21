@@ -1,0 +1,10 @@
+{
+  "caPath": "",
+  "certPath": "",
+  "externalLinks": [],
+  "keyPath": "",
+  "requestCluster": "edge",
+  "serverAddress": "control.default.svc.cluster.local:50000",
+  "useTls": false,
+  "zoneName": "zone-default-zone"
+}

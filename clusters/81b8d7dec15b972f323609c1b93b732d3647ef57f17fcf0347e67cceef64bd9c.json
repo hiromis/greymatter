@@ -8,9 +8,13 @@
   "http_protocol_options": null,
   "instances": [
     {
-      "host": "10.42.4.7",
+      "host": "10.42.1.12",
       "port": 10808,
       "metadata": [
+        {
+          "key": "controller-revision-hash",
+          "value": "prometheus-7f685f4fdc"
+        },
         {
           "key": "deployment",
           "value": "prometheus"
@@ -24,20 +28,16 @@
           "value": "prometheus-0"
         },
         {
-          "key": "controller-revision-hash",
-          "value": "prometheus-7f685f4fdc"
-        },
-        {
           "key": "gm_control_discovery",
           "value": "true"
         },
         {
           "key": "gm_k8s_host_ip",
-          "value": "172.19.0.4"
+          "value": "172.19.0.2"
         },
         {
           "key": "gm_k8s_node_name",
-          "value": "k3d-greymatter-agent-1"
+          "value": "k3d-greymatter-server-0"
         }
       ]
     }
